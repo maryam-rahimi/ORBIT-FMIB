@@ -1,0 +1,2 @@
+STRICT ANONYMITY SCAN
+PASS: no author names, institution names, personal emails, known usernames, cluster-specific name, or absolute user paths found in text files.

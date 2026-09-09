@@ -1,0 +1,132 @@
+ORBIT-FMIB anonymous GitHub package
+Files: 129
+
+       247  .gitignore
+       570  02 Data/README.md
+     24558  03 Code/01_validate_gb1_inputs.py
+     25904  03 Code/02_validate_esm2_loading.py
+     38049  03 Code/03_build_orbit_synth_fmib.py
+     37309  03 Code/04_validate_mi_estimator.py
+     47310  03 Code/05_run_orbit_synth_fmib.py
+     31067  03 Code/06_build_gb1_cubes.py
+     31110  03 Code/07_build_gb1_strict_split.py
+     34667  03 Code/08_build_esm2_extraction_index.py
+     40440  03 Code/09_extract_esm2_representations.py
+     25094  03 Code/10_build_gb1_order_samples.py
+     26697  03 Code/11_replicate_gb1_iid_split_seeds.py
+     38326  03 Code/11_run_gb1_subset_conditioned_mi_iid.py
+     43098  03 Code/11_run_gb1_target_mi.py
+     31162  03 Code/11_validate_gb1_fixed_subset_sample_regime.py
+     25977  03 Code/11_validate_gb1_iid_vs_strict_split.py
+     38679  03 Code/11_validate_gb1_null_controls.py
+     45895  03 Code/11_validate_gb1_subset_conditioning.py
+     35655  03 Code/11_validate_relative_retention_adversarial_suite.py
+     27198  03 Code/11_validate_relative_retention_calibration.py
+     16089  03 Code/12_aggregate_gb1_mi_fixed_subset_iid.py
+     23447  03 Code/13_fixed_subset_retention_iid.py
+     65014  03 Code/14_bootstrap_retention_inference.py
+     43529  03 Code/15_analyze_gb1_layerwise_dynamics.py
+     20610  03 Code/15_export_overleaf_results.py
+     38083  03 Code/16_make_gb1_layerwise_figures.py
+     15094  03 Code/19_build_subset_conditioning_validation_figure_v6.py
+      5438  04 Experiments/EXP01_ORBIT_Synth/fmib_code05_validation_manifest.json
+     76386  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectories_long.csv
+       270  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_index.csv
+      3872  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_manifest.json
+      9033  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_matrix.csv
+      9613  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_seed_sd_matrix.csv
+       306  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_order_retention_summary.csv
+       421  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_retention_contrast.csv
+      3910  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_retention_manifest.json
+      1849  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_subset_retention.csv
+     22925  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_cell_scores.csv
+       699  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_contrast.json
+      4393  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_manifest.json
+       197  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_order_retention.csv
+    265579  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_seed_results.csv
+      1628  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_subset_retention.csv
+      6340  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_dynamics_manifest.json
+       919  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_order_summary.csv
+     63645  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_normalized_long.csv
+      8306  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_summary.csv
+     16888  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_order_layerwise_peak_normalized.csv
+     22776  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_order_layerwise_raw_descriptive.csv
+      3479  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_subset_seed_dynamics.csv
+      2088  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_key_values.txt
+     56090  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_main.pdf
+    684016  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_main.png
+     25167  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_peak_timing_stability.pdf
+      7275  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/gb1_layerwise_figures_manifest.json
+     28369  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelA_order_trajectories.pdf
+     31997  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelB_subset_transit_map.pdf
+     30597  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelC_peak_to_final_survival.pdf
+      3273  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_bootstrap_execution_contract.json
+      1797  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_bootstrap_implementation_contract.json
+      3288  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_delete_one_identity_candidate_contract.json
+      1522  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_identity_support_contract.json
+      1399  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_inference_contract.json
+       882  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_provenance_correction_01.json
+      3638  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/code14_statistical_design_supersession_01.json
+      7979  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_manifest.json
+      7729  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_order_descriptive.csv
+    166575  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_seed_results.csv
+     75920  04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_summary.csv
+     12304  04 Experiments/EXP02_GB1_ESM2/gb1_random_derangement_null_by_derangement.csv
+     11282  04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_comparison.csv
+       525  04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_subset_effects.csv
+     58250  04 Experiments/EXP02_GB1_ESM2/gb1_target_mi_seed_results.csv
+       794  04 Experiments/EXP03_MI/fixed_subset_sample_regime_gain_summary.csv
+      5487  04 Experiments/EXP03_MI/fixed_subset_sample_regime_manifest.json
+      3194  04 Experiments/EXP03_MI/fixed_subset_sample_regime_replicate_summary.csv
+      6784  04 Experiments/EXP03_MI/fixed_subset_sample_regime_seed_results.csv
+       355  04 Experiments/EXP03_MI/fixed_subset_sample_regime_state.json
+      3970  04 Experiments/EXP03_MI/mine_validation_manifest.json
+      5932  04 Experiments/EXP03_MI/relative_retention_2560d_manifest.json
+       269  04 Experiments/EXP03_MI/relative_retention_2560d_retention.csv
+      5420  04 Experiments/EXP03_MI/relative_retention_2560d_seed_results.csv
+       530  04 Experiments/EXP03_MI/relative_retention_2560d_seed_retention.csv
+      1995  04 Experiments/EXP03_MI/relative_retention_2560d_state.json
+      2004  04 Experiments/EXP03_MI/relative_retention_2560d_summary.csv
+      7996  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_manifest.json
+      1378  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_retention.csv
+       766  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_scenario_summary.csv
+     14815  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_seed_results.csv
+      2072  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_seed_retention.csv
+      2225  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_state.json
+      4960  04 Experiments/EXP03_MI/relative_retention_adversarial_2560d_summary.csv
+       688  04 Experiments/README.md
+     41647  05 Figure/Figure_subset_conditioning_validation_paper_v6.pdf
+    349364  05 Figure/Figure_subset_conditioning_validation_paper_v6.png
+      2051  05 Figure/Figure_subset_conditioning_validation_paper_v6_provenance.json
+       165  ANONYMITY_SCAN.txt
+      5283  CODE_DESCRIPTION.md
+      2829  CODE_HASHES.sha256
+      1251  DATA_ACCESS.md
+      9779  FILE_INVENTORY.txt
+      1426  GITHUB_UPLOAD_STEPS.md
+         5  PYTHON_SYNTAX_CHECK.txt
+      3490  README.md
+       598  RELEASE_SCOPE.md
+     13562  RESULT_HASHES.sha256
+     41647  figures/manuscript/Figure_subset_conditioning_validation_paper_v6.pdf
+    349364  figures/manuscript/Figure_subset_conditioning_validation_paper_v6.png
+   2065094  figures/manuscript/Paper_Framework.png
+    104385  figures/manuscript/figure_gb1_layerwise_dynamics_main_flattened.pdf
+     14927  figures/manuscript/figure_order_retention_primary_sensitivity.pdf
+        46  requirements.txt
+      1313  slurm/code09.slurm
+      1187  slurm/code11_calibration.slurm
+      1369  slurm/code11_iid_production.slurm
+      1101  slurm/code11_iid_production_preflight.slurm
+      1602  slurm/code11_iid_replications.slurm
+      1051  slurm/code11_iid_vs_strict.slurm
+       819  slurm/code11_null_preflight.slurm
+       559  slurm/code11_null_randomized.slurm
+       495  slurm/code11_relative_preflight.slurm
+       679  slurm/code11_sample_regime.slurm
+       723  slurm/code11_sample_regime_preflight.slurm
+       681  slurm/code11_subset_conditioned.slurm
+       592  slurm/code11_subset_preflight.slurm
+       514  slurm/code14_delete_one_identity_pilot.slurm
+       780  slurm/relative_retention.slurm
+       810  slurm/relative_retention_adversarial.slurm
