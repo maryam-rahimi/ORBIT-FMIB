@@ -1,0 +1,2 @@
+retain_1,retain_2,retain_3,retain_4,lo_retention,ho_retention,delta_ho_minus_lo,directional_hypothesis,contrast_estimable,inferential_test_performed,note
+0.9604285560531535,0.971326691060321,0.9100522962325894,0.8076468256783133,0.9658776235567372,0.8588495609554514,-0.10702806260128583,delta_ho_minus_lo < 0,True,False,Point contrast only. Final cube-/subset-aware inferential resampling is not performed by Code 13.

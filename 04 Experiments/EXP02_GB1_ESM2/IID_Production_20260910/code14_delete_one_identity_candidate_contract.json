@@ -1,0 +1,76 @@
+{
+  "contract_name": "ORBIT-FMIB CODE 14 — CROSSED DELETE-ONE-AA CANDIDATE DESIGN",
+  "status": "FROZEN_FOR_COMPUTATIONAL_VALIDATION_ONLY",
+
+  "purpose": "Define dependence-aware leave-one-amino-acid-identity perturbations on the observed GB1 strict cube support for computational validation before any formal inferential combination rule is authorized.",
+
+  "biological_dependency_units": {
+    "position_39_observed_nonwt_identities": 19,
+    "position_40_observed_nonwt_identities": 19,
+    "position_41_observed_nonwt_identities": 19,
+    "position_54_observed_nonwt_identities": 18,
+    "total_single_identity_deletions": 75
+  },
+
+  "dependency_rule": "Deleting one amino-acid identity removes every existing strict cube containing that identity at that biological position. Cubes sharing the deleted identity therefore move together.",
+
+  "support_contract": {
+    "strict_cube_count": 8210,
+    "reconstructed_identity_support_sha256": "ab4e72b7deb716dc137f6f9eecbe04c8122a276b31d2c6811565631a76b562e8",
+    "identity_support_contract_sha256": "8313a41e42d56af63aa9c3b814c4b99c241694c5eaa22a5b07a16e1a27bb7f8d",
+    "new_cube_combinations_allowed": false,
+    "mixed_cubes_allowed": false
+  },
+
+  "estimator_partition": {
+    "retain_corrected_iid_partition": true,
+    "production_iid_split_seed": 20260910,
+    "production_iid_split_sha256": "4b7f1d173de7a979db762f54bfcb90674ab36718f51ee6aef0bb47db91b2ff66",
+    "rule": "For a deletion, preserve each surviving cube's original corrected-IID estimator partition membership; do not repartition surviving cubes."
+  },
+
+  "feasibility_audit": {
+    "identity_deletions_checked": 75,
+    "train_remaining_min": 6526,
+    "train_remaining_max": 7316,
+    "validation_remaining_min": 209,
+    "validation_remaining_max": 245,
+    "test_remaining_min": 540,
+    "test_remaining_max": 613,
+    "all_remaining_min": 7300,
+    "all_remaining_max": 8172,
+    "mine_fits_executed": 0,
+    "inference_executed": false,
+    "feasibility_status": "PASS"
+  },
+
+  "computational_pilot": {
+    "authorized": true,
+    "deletion_position": 41,
+    "deletion_identity": "L",
+    "reason": "Most aggressive observed validation-set deletion in the feasibility audit.",
+    "expected_surviving_counts": {
+      "train": 6596,
+      "validation": 209,
+      "test": 557,
+      "all": 7362
+    },
+    "scope": "Computational validation only. Results must not be used as an inferential replicate or included in any final CI, p-value, tail probability, or significance claim."
+  },
+
+  "formal_inference": {
+    "authorized": false,
+    "bootstrap_ci_authorized": false,
+    "jackknife_variance_formula_authorized": false,
+    "p_value_authorized": false,
+    "directional_tail_probability_authorized": false,
+    "rule": "A separate inferential implementation contract specifying the mathematically justified multiway identity jackknife or alternative dependence-aware inference rule must be frozen before any inferential runs."
+  },
+
+  "superseded_designs": [
+    "Independent-cube bootstrap is not authoritative.",
+    "Four-way product-multiplicity identity bootstrap is not authorized for MINE refitting because its audit produced severely reduced effective estimator sample sizes."
+  ],
+
+  "inferential_fits_executed_before_this_contract": false
+}

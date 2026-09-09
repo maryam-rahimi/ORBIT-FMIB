@@ -1,0 +1,5 @@
+order_k,n_expected_subsets,n_estimable_subsets,order_estimable,retain_k
+1,4,4,True,0.9401631533479302
+2,6,6,True,0.9552639309836439
+3,4,4,True,0.8480781803561832
+4,1,1,True,0.6791566016990898

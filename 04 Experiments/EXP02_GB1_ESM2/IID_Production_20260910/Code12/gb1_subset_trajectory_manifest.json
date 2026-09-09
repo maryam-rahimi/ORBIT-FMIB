@@ -1,0 +1,136 @@
+{
+  "audit": {
+    "all_source_scores_finite": true,
+    "generated_index_rows": 15,
+    "generated_long_rows": 465,
+    "generated_matrix_rows": 31,
+    "generated_sd_matrix_rows": 31,
+    "layers_per_trajectory": 31,
+    "overall_pass": true,
+    "source_grid_complete": true,
+    "source_subset_rows": 465,
+    "trajectory_count": 15,
+    "unique_layer_subset_cells": 465
+  },
+  "code12_source_sha256": "13c43c96958053181de00335fd3d65fc772c51691d3c7617fb312f62ca293623",
+  "code_name": "ORBIT-FMIB CODE 12 \u2014 FIXED-SUBSET TRAJECTORY ORGANIZATION",
+  "file_sha256": {
+    "gb1_subset_trajectories_long.csv": "ad2e5ec150c5c664e77bc3b877ae0ad79c91314f3dc1494790e4ad6634e8dcf4",
+    "gb1_subset_trajectory_index.csv": "302508e2aee5f80a68e9b184fec0656df09f43465f834dfa91de33f12666f224",
+    "gb1_subset_trajectory_matrix.csv": "7bc88d02371fcdf636859dfd0a3d821e6879e67bb286fe6b502fb966937ee2d3",
+    "gb1_subset_trajectory_seed_sd_matrix.csv": "bf91158cfcfa01ab46879372074df6105b5fcb3b167dbf5b69c247cf754a1a7e"
+  },
+  "interpretation_boundary": [
+    "Code 12 is descriptive trajectory organization and QA only.",
+    "The 15 fixed-subset trajectories are preserved independently.",
+    "No critic pools different positional subsets.",
+    "No retention statistic is computed in Code 12.",
+    "No order-level confirmatory statistic is computed in Code 12.",
+    "Negative near-floor neural-DV scores are retained.",
+    "Randomized-null scores are not subtracted from biological scores.",
+    "Any future retention rule must be defined within each fixed subset trajectory first and only then aggregated within interaction order."
+  ],
+  "outputs": {
+    "trajectory_index": "gb1_subset_trajectory_index.csv",
+    "trajectory_long": "gb1_subset_trajectories_long.csv",
+    "trajectory_matrix": "gb1_subset_trajectory_matrix.csv",
+    "trajectory_seed_sd_matrix": "gb1_subset_trajectory_seed_sd_matrix.csv"
+  },
+  "overall_pass": true,
+  "purpose": "Organize the authoritative corrected Code-11 fixed-subset biological score map into 15 trajectories across 31 ESM-2 representation stages, without computing retention.",
+  "schema_version": 2,
+  "trajectory_contract": {
+    "authoritative_unit": "fixed positional subset S",
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "matrix_columns": [
+      "k1_S1",
+      "k1_S2",
+      "k1_S4",
+      "k1_S8",
+      "k2_S3",
+      "k2_S5",
+      "k2_S6",
+      "k2_S9",
+      "k2_S10",
+      "k2_S12",
+      "k3_S7",
+      "k3_S11",
+      "k3_S13",
+      "k3_S14",
+      "k4_S15"
+    ],
+    "matrix_rows": "ESM-2 representation stages L0..L30",
+    "n_layer_subset_cells": 465,
+    "n_layers": 31,
+    "n_subsets": 15,
+    "negative_scores_clamped": false,
+    "null_scores_subtracted": false,
+    "pooled_by_order_mi_estimation": false,
+    "retention_computed": false,
+    "score_field": "Code-11 score_mean across critic seeds",
+    "subsets_by_order": {
+      "1": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "2": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        12
+      ],
+      "3": [
+        7,
+        11,
+        13,
+        14
+      ],
+      "4": [
+        15
+      ]
+    }
+  },
+  "upstream": {
+    "code11_manifest": "gb1_subset_mi_manifest.json",
+    "code11_manifest_sha256": "eceb67b989192623218fb05e2f6c9eab2efa9acd9e0e8e4cc76b5066e9759888",
+    "code11_production_source_sha256": "8ff6654c9352e56f2eff7368ac1ed14b90929f3729cb3bacc5b5dd592b1209e3",
+    "subset_summary": "gb1_subset_mi_summary.csv",
+    "subset_summary_sha256": "02ecaa69eca02a7b2df8474b79bbc3efc12adb7b72b837faf1564b1d49aff5e5"
+  }
+}

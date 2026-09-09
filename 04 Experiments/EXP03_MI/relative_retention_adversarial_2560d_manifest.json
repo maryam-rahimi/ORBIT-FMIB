@@ -1,0 +1,296 @@
+{
+  "code_name": "ORBIT-FMIB ADVERSARIAL RELATIVE-RETENTION SUITE",
+  "estimator_protocol": {
+    "absolute_mi_accuracy_claimed": false,
+    "code04_source_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_source_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "n_test": 1024,
+    "n_total": 8192,
+    "n_train": 6144,
+    "n_val": 1024,
+    "no_clamping": true,
+    "no_null_subtraction": true,
+    "no_pca_projection": true,
+    "source": "exact live Code-04 train_mine implementation"
+  },
+  "fingerprint": {
+    "code04_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "common_nodes": [
+      [
+        "null",
+        0.0
+      ],
+      [
+        "layer_00_start",
+        0.15
+      ],
+      [
+        "layer_01_mid",
+        0.5
+      ],
+      [
+        "layer_02_peak",
+        1.5
+      ]
+    ],
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "device_type": "cuda",
+    "direction_seed": 20260942,
+    "flat_permutation_alpha": 0.05,
+    "noise_seed_base": 20260950,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "scenarios": {
+      "flat_moderate": {
+        "expected": "flat",
+        "gains": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "flat_strong": {
+        "expected": "flat",
+        "gains": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "ho_advantage": {
+        "expected": "positive",
+        "gains": [
+          0.15,
+          0.5,
+          1.0,
+          1.2
+        ]
+      },
+      "ho_loss": {
+        "expected": "negative",
+        "gains": [
+          1.2,
+          1.0,
+          0.5,
+          0.15
+        ]
+      }
+    },
+    "schema_version": 1,
+    "sigma": 1.0,
+    "signal_separation_min": 0.05,
+    "target_seed": 20260941
+  },
+  "fingerprint_sha256": "82312abcb727a8b4360fafea45e79bbac8513d0686c82029bcb2928aabe01cd6",
+  "gates": {
+    "global": {
+      "absolute_mi_accuracy_required": false,
+      "all_retention_diagnostics_finite": true,
+      "all_scenarios_pass": true,
+      "all_summary_diagnostics_finite": true,
+      "common_trajectory_monotonic": true,
+      "hard_gates": [
+        "null_abs_le_code04_tolerance",
+        "seed_stability",
+        "common_trajectory_monotonic",
+        "mean_peak_localized",
+        "signal_separation_ge_min",
+        "all_summary_diagnostics_finite",
+        "all_retention_diagnostics_finite",
+        "all_scenarios_pass"
+      ],
+      "max_seed_sd": 0.01945443325163261,
+      "mean_peak_localized": true,
+      "null_abs_estimate": 0.00023392712076505026,
+      "null_abs_le_code04_tolerance": true,
+      "overall_pass": true,
+      "peak_minus_null": 0.17879002168774605,
+      "representation_dim": 2560,
+      "seed_stability": true,
+      "signal_separation_ge_min": true
+    },
+    "scenarios": {
+      "flat_moderate": {
+        "estimated_delta_ho_lo": -0.003035698126914857,
+        "estimated_retention_spread": 0.016448258200806587,
+        "expected": "flat",
+        "flat_exact_permutation_p_value": 1.0,
+        "flat_no_false_selectivity_at_alpha": true,
+        "flat_permutation_count": 24,
+        "hard_gates": [
+          "true_retention_equal",
+          "flat_no_false_selectivity_at_alpha"
+        ],
+        "max_abs_seed_delta_report_only": 0.013547399136344599,
+        "overall_pass": true,
+        "scenario": "flat_moderate",
+        "seed_deltas": [
+          0.007043676278035484,
+          -0.013547399136344599,
+          -0.0018976805582864853
+        ],
+        "true_delta_ho_lo": 0.0,
+        "true_retention_equal": true
+      },
+      "flat_strong": {
+        "estimated_delta_ho_lo": -0.06783944223462224,
+        "estimated_retention_spread": 0.1681463662835309,
+        "expected": "flat",
+        "flat_exact_permutation_p_value": 0.6666666666666666,
+        "flat_no_false_selectivity_at_alpha": true,
+        "flat_permutation_count": 24,
+        "hard_gates": [
+          "true_retention_equal",
+          "flat_no_false_selectivity_at_alpha"
+        ],
+        "max_abs_seed_delta_report_only": 0.16272723671940276,
+        "overall_pass": true,
+        "scenario": "flat_strong",
+        "seed_deltas": [
+          -0.16272723671940276,
+          -0.03311083509377216,
+          -0.012450020623241298
+        ],
+        "true_delta_ho_lo": 0.0,
+        "true_retention_equal": true
+      },
+      "ho_advantage": {
+        "all_seed_deltas_positive": true,
+        "estimated_delta_ho_lo": 0.4996339658333262,
+        "estimated_order_strict_increasing": true,
+        "estimated_retention_spread": 0.6954076999176685,
+        "expected": "positive",
+        "hard_gates": [
+          "true_order_strict_increasing",
+          "estimated_order_strict_increasing",
+          "mean_delta_positive",
+          "all_seed_deltas_positive"
+        ],
+        "mean_delta_positive": true,
+        "overall_pass": true,
+        "scenario": "ho_advantage",
+        "seed_deltas": [
+          0.46123864106847223,
+          0.5123771312299218,
+          0.52339428751601
+        ],
+        "true_delta_ho_lo": 0.5683389387795394,
+        "true_order_strict_increasing": true
+      },
+      "ho_loss": {
+        "all_seed_deltas_negative": true,
+        "estimated_delta_ho_lo": -0.5473638910069122,
+        "estimated_order_strict_decreasing": true,
+        "estimated_retention_spread": 0.6731173733198808,
+        "expected": "negative",
+        "hard_gates": [
+          "true_order_strict_decreasing",
+          "estimated_order_strict_decreasing",
+          "mean_delta_negative",
+          "all_seed_deltas_negative"
+        ],
+        "mean_delta_negative": true,
+        "overall_pass": true,
+        "scenario": "ho_loss",
+        "seed_deltas": [
+          -0.5540929200474616,
+          -0.5194961240717243,
+          -0.5695819762268458
+        ],
+        "true_delta_ho_lo": -0.5683389387795394,
+        "true_order_strict_decreasing": true
+      }
+    }
+  },
+  "outputs": {
+    "retention": "relative_retention_adversarial_2560d_retention.csv",
+    "scenario_summary": "relative_retention_adversarial_2560d_scenario_summary.csv",
+    "seed_results": "relative_retention_adversarial_2560d_seed_results.csv",
+    "seed_retention": "relative_retention_adversarial_2560d_seed_retention.csv",
+    "summary": "relative_retention_adversarial_2560d_summary.csv"
+  },
+  "purpose": "Hypothesis-adversarial validation of relative 2560-D MINE trajectory/retention fidelity without absolute MI claims.",
+  "schema_version": 1,
+  "status": "PASS",
+  "synthetic_contract": {
+    "common_nodes": [
+      [
+        "null",
+        0.0
+      ],
+      [
+        "layer_00_start",
+        0.15
+      ],
+      [
+        "layer_01_mid",
+        0.5
+      ],
+      [
+        "layer_02_peak",
+        1.5
+      ]
+    ],
+    "direction_seed": 20260942,
+    "flat_test": {
+      "alpha": 0.05,
+      "method": "exact 24-permutation order-label test applied consistently across critic seeds"
+    },
+    "noise_seed_base": 20260950,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "scenarios": {
+      "flat_moderate": {
+        "expected": "flat",
+        "gains": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "flat_strong": {
+        "expected": "flat",
+        "gains": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "ho_advantage": {
+        "expected": "positive",
+        "gains": [
+          0.15,
+          0.5,
+          1.0,
+          1.2
+        ]
+      },
+      "ho_loss": {
+        "expected": "negative",
+        "gains": [
+          1.2,
+          1.0,
+          0.5,
+          0.15
+        ]
+      }
+    },
+    "sigma": 1.0,
+    "target_dim": 1,
+    "target_seed": 20260941
+  }
+}

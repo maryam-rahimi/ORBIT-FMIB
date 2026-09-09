@@ -1,0 +1,232 @@
+{
+  "code_name": "ORBIT-FMIB RELATIVE-RETENTION CALIBRATION",
+  "estimator_protocol": {
+    "absolute_mi_accuracy_claimed": false,
+    "code04_source_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_source_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "n_test": 1024,
+    "n_total": 8192,
+    "n_train": 6144,
+    "n_val": 1024,
+    "no_clamping": true,
+    "no_null_subtraction": true,
+    "no_pca_projection": true,
+    "source": "exact live Code-04 train_mine implementation"
+  },
+  "fingerprint": {
+    "code04_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "device_type": "cuda",
+    "direction_seed": 20260922,
+    "final_nodes": {
+      "1": "final_k1",
+      "2": "final_k2",
+      "3": "final_k3",
+      "4": "final_k4"
+    },
+    "nodes": [
+      [
+        "null",
+        0.0,
+        "null",
+        0
+      ],
+      [
+        "layer_00_start",
+        0.15,
+        "common",
+        0
+      ],
+      [
+        "layer_01_mid",
+        0.5,
+        "common",
+        1
+      ],
+      [
+        "layer_02_peak",
+        1.5,
+        "common",
+        2
+      ],
+      [
+        "final_k1",
+        1.2,
+        "final",
+        1
+      ],
+      [
+        "final_k2",
+        1.0,
+        "final",
+        2
+      ],
+      [
+        "final_k3",
+        0.5,
+        "final",
+        3
+      ],
+      [
+        "final_k4",
+        0.15,
+        "final",
+        4
+      ]
+    ],
+    "noise_seed_base": 20260930,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "schema_version": 1,
+    "sigma": 1.0,
+    "signal_separation_min": 0.05,
+    "target_seed": 20260921
+  },
+  "fingerprint_sha256": "48e5a7c6f353fe43f4626676bee5daf219ede673149cf43c7f7f7e1869ed4901",
+  "gates": {
+    "absolute_mi_accuracy_required": false,
+    "all_retention_diagnostics_finite": true,
+    "all_seed_deltas_negative": true,
+    "all_summary_diagnostics_finite": true,
+    "common_trajectory_monotonic": true,
+    "delta_sign_recovered": true,
+    "estimated_delta_ho_lo": -0.5392107178519914,
+    "estimated_ho_retention": -0.0008358611158725275,
+    "estimated_lo_retention": 0.5383748567361188,
+    "estimated_retention_order_k1_gt_k2_gt_k3_gt_k4": true,
+    "hard_gates": [
+      "null_abs_le_code04_tolerance",
+      "seed_stability",
+      "common_trajectory_monotonic",
+      "mean_peak_localized",
+      "signal_separation_ge_min",
+      "true_retention_order_is_strict",
+      "estimated_retention_order_k1_gt_k2_gt_k3_gt_k4",
+      "delta_sign_recovered",
+      "all_seed_deltas_negative",
+      "all_summary_diagnostics_finite",
+      "all_retention_diagnostics_finite"
+    ],
+    "max_seed_sd": 0.028307022182816947,
+    "mean_peak_localized": true,
+    "null_abs_estimate": 0.00023708119988441467,
+    "null_abs_le_code04_tolerance": true,
+    "overall_pass": true,
+    "peak_minus_null": 0.19177804763118425,
+    "representation_dim": 2560,
+    "seed_stability": true,
+    "signal_separation_ge_min": true,
+    "true_delta_ho_lo": -0.5683389387795394,
+    "true_ho_retention": 0.10409923218019401,
+    "true_lo_retention": 0.6724381709597335,
+    "true_retention_order_is_strict": true
+  },
+  "outputs": {
+    "retention": "relative_retention_2560d_retention.csv",
+    "seed_results": "relative_retention_2560d_seed_results.csv",
+    "seed_retention": "relative_retention_2560d_seed_retention.csv",
+    "summary": "relative_retention_2560d_summary.csv"
+  },
+  "purpose": "Validate relative 2560-D MINE trajectory/retention fidelity without claiming absolute MI accuracy.",
+  "schema_version": 1,
+  "status": "PASS",
+  "synthetic_contract": {
+    "direction_seed": 20260922,
+    "final_nodes": {
+      "1": "final_k1",
+      "2": "final_k2",
+      "3": "final_k3",
+      "4": "final_k4"
+    },
+    "nodes": [
+      {
+        "gain": 0.0,
+        "kind": "null",
+        "node": "null",
+        "node_index": 0,
+        "noise_seed": 20260930,
+        "order_k": 0,
+        "true_mi_nats": 0.0
+      },
+      {
+        "gain": 0.15,
+        "kind": "common",
+        "node": "layer_00_start",
+        "node_index": 1,
+        "noise_seed": 20260931,
+        "order_k": 0,
+        "true_mi_nats": 0.011125304467409862
+      },
+      {
+        "gain": 0.5,
+        "kind": "common",
+        "node": "layer_01_mid",
+        "node_index": 2,
+        "noise_seed": 20260932,
+        "order_k": 1,
+        "true_mi_nats": 0.11157177565710488
+      },
+      {
+        "gain": 1.5,
+        "kind": "common",
+        "node": "layer_02_peak",
+        "node_index": 3,
+        "noise_seed": 20260933,
+        "order_k": 2,
+        "true_mi_nats": 0.5893274981708231
+      },
+      {
+        "gain": 1.2,
+        "kind": "final",
+        "node": "final_k1",
+        "node_index": 4,
+        "noise_seed": 20260934,
+        "order_k": 1,
+        "true_mi_nats": 0.44599901965255523
+      },
+      {
+        "gain": 1.0,
+        "kind": "final",
+        "node": "final_k2",
+        "node_index": 5,
+        "noise_seed": 20260935,
+        "order_k": 2,
+        "true_mi_nats": 0.34657359027997264
+      },
+      {
+        "gain": 0.5,
+        "kind": "final",
+        "node": "final_k3",
+        "node_index": 6,
+        "noise_seed": 20260936,
+        "order_k": 3,
+        "true_mi_nats": 0.11157177565710488
+      },
+      {
+        "gain": 0.15,
+        "kind": "final",
+        "node": "final_k4",
+        "node_index": 7,
+        "noise_seed": 20260937,
+        "order_k": 4,
+        "true_mi_nats": 0.011125304467409862
+      }
+    ],
+    "noise_seed_base": 20260930,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "sigma": 1.0,
+    "target_dim": 1,
+    "target_seed": 20260921
+  }
+}

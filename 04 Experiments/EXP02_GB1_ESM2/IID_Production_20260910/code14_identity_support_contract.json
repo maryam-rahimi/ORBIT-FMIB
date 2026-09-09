@@ -1,0 +1,43 @@
+{
+  "contract_name": "ORBIT-FMIB CODE 14 — RECOVERED CROSSED AA IDENTITY SUPPORT",
+  "status": "FROZEN_BEFORE_DEPENDENCE_AWARE_INFERENCE",
+
+  "strict_cube_count": 8210,
+  "reconstructed_identity_support_sha256": "ab4e72b7deb716dc137f6f9eecbe04c8122a276b31d2c6811565631a76b562e8",
+
+  "biological_positions": [39, 40, 41, 54],
+  "wt_variant": "VDGV",
+
+  "observed_nonwt_levels": {
+    "39": ["A","C","D","E","F","G","H","I","K","L","M","N","P","Q","R","S","T","W","Y"],
+    "40": ["A","C","E","F","G","H","I","K","L","M","N","P","Q","R","S","T","V","W","Y"],
+    "41": ["A","C","D","E","F","H","I","K","L","M","N","P","Q","R","S","T","V","W","Y"],
+    "54": ["A","C","E","F","G","H","I","K","L","M","N","P","Q","R","S","T","W","Y"]
+  },
+
+  "observed_level_counts": {
+    "39": 19,
+    "40": 19,
+    "41": 19,
+    "54": 18
+  },
+
+  "missing_nominal_nonwt_levels": {
+    "39": [],
+    "40": [],
+    "41": [],
+    "54": ["D"]
+  },
+
+  "support_rule": "Dependence-aware resampling may assign multiplicities only to observed amino-acid identity levels and existing strict cubes. It must not synthesize mixed or otherwise unobserved cube combinations.",
+
+  "same_8210_cube_support_required": true,
+  "mixed_cubes_allowed": false,
+  "new_cube_combinations_allowed": false,
+
+  "corrected_iid_estimator_partition_retained": true,
+  "production_iid_split_seed": 20260910,
+  "production_iid_split_sha256": "4b7f1d173de7a979db762f54bfcb90674ab36718f51ee6aef0bb47db91b2ff66",
+
+  "inferential_fits_executed_before_this_contract": false
+}

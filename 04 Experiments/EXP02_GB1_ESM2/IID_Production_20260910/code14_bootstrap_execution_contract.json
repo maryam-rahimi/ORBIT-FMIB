@@ -1,0 +1,73 @@
+{
+  "contract_name": "ORBIT-FMIB CODE 14 — BOOTSTRAP EXECUTION CONTRACT",
+  "status": "FROZEN_BEFORE_INFERENCE",
+
+  "parent_inference_contract_sha256": "e32ef2c8454fde64ecd4a5c93988814c202f1a0299dee95512f95cabf6f40906",
+  "implementation_contract_sha256": "b3cf9937ecba19a818ba7b97fabb9cb60a015e5d1ff41e5a5cc6ab58923e81e5",
+  "provenance_correction_01_sha256": "646568c819b1e9b04ad8c78f5ecde6080ff0cf7bfe668dd282d5d449390d0a52",
+
+  "production_bootstrap_replicates": 499,
+  "bootstrap_master_seed": 20260911,
+
+  "runtime_pilot_replicates": 5,
+  "runtime_pilot_used_for_inference": false,
+  "runtime_pilot_may_change_scientific_contract": false,
+  "runtime_pilot_purpose": "runtime, memory, checkpoint, and implementation validation only",
+
+  "production_iid_split_seed": 20260910,
+  "production_iid_split_sha256": "4b7f1d173de7a979db762f54bfcb90674ab36718f51ee6aef0bb47db91b2ff66",
+
+  "partition_sizes": {
+    "train": 7352,
+    "validation": 245,
+    "test": 613,
+    "total": 8210
+  },
+
+  "bootstrap_unit": "biological_cube",
+  "sampling_with_replacement": true,
+  "resample_train_within_train": true,
+  "resample_validation_within_validation": true,
+  "resample_test_within_test": true,
+  "cross_partition_resampling": false,
+  "same_bootstrap_indices_across_all_layers_subsets_and_critic_seeds_within_replicate": true,
+
+  "layers": 31,
+  "fixed_subsets": 15,
+  "critic_seeds": [11, 23, 37],
+  "fits_per_full_replicate": 1395,
+
+  "critic_seed_role": "estimator_replicates_not_biological_replicates",
+  "cell_score_aggregation": "mean_test_mi_across_critic_seeds",
+
+  "tau_q99_abs_fixed_subset_null": 0.006777383486429849,
+  "negative_scores_clamped": false,
+  "null_scores_subtracted": false,
+
+  "peak_layer_reselected_within_every_bootstrap_replicate": true,
+  "retention_rule": "retain_S = D_layer30_S / max_layer(D_layer_S) when peak > tau; otherwise not estimable",
+
+  "low_order_definition": [1, 2],
+  "high_order_definition": [3, 4],
+  "primary_statistic": "delta_HO_minus_LO = mean(retain_3, retain_4) - mean(retain_1, retain_2)",
+  "directional_hypothesis": "delta_HO_minus_LO < 0",
+
+  "primary_interval": "95_percent_percentile_bootstrap_CI",
+  "directional_decision_rule": "support directional hypothesis when one-sided 95_percent bootstrap upper bound for delta_HO_minus_LO is below zero",
+  "two_sided_robustness": "report 95_percent percentile bootstrap CI",
+
+  "bootstrap_tail_probability": "report fraction of valid production bootstrap replicates with delta_HO_minus_LO >= 0 using finite-replicate +1 correction; label as bootstrap directional tail probability, not an exact classical p-value",
+
+  "non_estimable_replicate_rule": "If any required order retention is not estimable under the frozen tau rule, mark that replicate delta as NA; never silently drop individual subsets.",
+  "minimum_valid_replicate_fraction_for_primary_inference": 0.95,
+  "if_valid_fraction_below_threshold": "Do not report primary bootstrap CI or directional inference as reliable.",
+
+  "checkpoint_resume_required": true,
+  "replicate_results_saved_individually": true,
+  "full_cell_level_bootstrap_results_saved": true,
+  "peak_layer_results_saved": true,
+
+  "observed_point_delta_HO_minus_LO": -0.10702806260128583,
+
+  "inference_executed_before_this_contract": false
+}

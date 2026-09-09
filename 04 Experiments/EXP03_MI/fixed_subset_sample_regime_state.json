@@ -1,0 +1,9 @@
+{
+  "code_name": "ORBIT-FMIB GB1 FIXED-SUBSET SAMPLE-REGIME CALIBRATION",
+  "completed_fits": 45,
+  "expected_fits": 45,
+  "fingerprint_sha256": "243b79cd1f7fe44a550bd0fdd93af338ebf0a38db9660d1abcbf60a4cba02e76",
+  "manifest_sha256": "b0559a4cc48a05e4c73061b658e9bf688797bc2a92fa967ad3070fcb4a19e3cf",
+  "schema_version": 1,
+  "status": "complete_pass"
+}

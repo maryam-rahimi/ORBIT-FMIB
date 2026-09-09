@@ -1,0 +1,13 @@
+split,order_k,n_subset_masks,n_samples,subset_mean_effect_eta2
+estimator_train,1,4,29408,0.3167140788959465
+estimator_train,2,6,44112,0.3999339122488804
+estimator_train,3,4,29408,0.27222262710935485
+estimator_train,4,1,7352,
+estimator_val,1,4,980,0.7535013768997917
+estimator_val,2,6,1470,0.7639874987820984
+estimator_val,3,4,980,0.6502420094873026
+estimator_val,4,1,245,
+estimator_test,1,4,2452,0.621816429643579
+estimator_test,2,6,3678,0.4688337330883515
+estimator_test,3,4,2452,0.22202884357188407
+estimator_test,4,1,613,

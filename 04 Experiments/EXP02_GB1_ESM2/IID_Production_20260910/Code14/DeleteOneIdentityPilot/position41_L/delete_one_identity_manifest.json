@@ -1,0 +1,101 @@
+{
+  "code14_source_sha256": "26b4d964c08cfc09374a7c9793f0a59b562634243702b1bf24e511848ff42143",
+  "code_name": "ORBIT-FMIB CODE 14 \u2014 FULL-STATISTIC CUBE-BOOTSTRAP RETENTION INFERENCE",
+  "computational_audit": {
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "critic_seeds_are_biological_replicates": false,
+    "expected_layer_subset_cells": 465,
+    "expected_seed_fits": 1395,
+    "expected_subset_trajectories": 15,
+    "mixed_cubes_generated": false,
+    "negative_scores_clamped": false,
+    "new_cube_combinations_generated": false,
+    "null_scores_subtracted": false,
+    "observed_layer_subset_cells": 465,
+    "observed_seed_fits": 1395,
+    "observed_subset_trajectories": 15,
+    "original_corrected_iid_membership_retained": true,
+    "overall_pass": true,
+    "peak_layer_reselected": true,
+    "survivors_repartitioned": false,
+    "tau": 0.006777383486429849,
+    "whole_identity_deleted_together": true
+  },
+  "contract_hashes": {
+    "candidate_delete_one_identity_contract": "9552cec3e05a468af0f8061b6b38469f98e4a65987d0aa4aa882a898a5c089d9",
+    "identity_support_contract": "8313a41e42d56af63aa9c3b814c4b99c241694c5eaa22a5b07a16e1a27bb7f8d"
+  },
+  "contrast": {
+    "contrast_estimable": true,
+    "delta_ho_minus_lo": -0.1840961511381506,
+    "directional_hypothesis": "delta_ho_minus_lo < 0",
+    "ho_retention": 0.7636173910276365,
+    "lo_retention": 0.9477135421657871,
+    "retain_1": 0.9401631533479302,
+    "retain_2": 0.9552639309836439,
+    "retain_3": 0.8480781803561832,
+    "retain_4": 0.6791566016990898
+  },
+  "deletion_identity": "L",
+  "deletion_position": 41,
+  "deletion_support_sha256": "e0fef893d26baae17a3e262951afad508996ae16f2f43fe107136aa1982b97d3",
+  "formal_inference_authorized": false,
+  "identity_support_sha256": "ab4e72b7deb716dc137f6f9eecbe04c8122a276b31d2c6811565631a76b562e8",
+  "included_in_formal_inference": false,
+  "included_in_production_inference": false,
+  "interpretation_boundary": [
+    "This run validates computational behavior under the frozen position-41=L identity deletion.",
+    "It is excluded from all formal inference.",
+    "Its contrast is descriptive computational output only.",
+    "No CI, p-value, bootstrap tail probability, or significance claim is authorized from this pilot."
+  ],
+  "mode": "delete_one_identity_computational_pilot",
+  "outputs": {
+    "delete_one_identity_cell_scores.csv": {
+      "bytes": 22925,
+      "sha256": "8d439821f0d76637da42d4815c6ea677f37824a26900d4ee36e2a97ea51c13c3"
+    },
+    "delete_one_identity_contrast.json": {
+      "bytes": 699,
+      "sha256": "432cfa288ce7cf72c62e14758fbbc1925b817e50d44fc0c3d3d1b3190f0d85ee"
+    },
+    "delete_one_identity_order_retention.csv": {
+      "bytes": 197,
+      "sha256": "b0b82c5086d9ee76a62189e87b9c1ce4c265e679ae30bdc8572acc220310bff7"
+    },
+    "delete_one_identity_seed_results.csv": {
+      "bytes": 265579,
+      "sha256": "3bb8e8fd8dabd2d886416f57b6c8f15070b8ed6a5c508f34bd21b7ae4e24b26a"
+    },
+    "delete_one_identity_subset_retention.csv": {
+      "bytes": 1628,
+      "sha256": "7c8dc90869ffe25cccedd9860d138b6b0f927ce5a89422491ba24ecd2699e09c"
+    }
+  },
+  "overall_pass": true,
+  "production_iid_split_seed": 20260910,
+  "production_iid_split_sha256": "4b7f1d173de7a979db762f54bfcb90674ab36718f51ee6aef0bb47db91b2ff66",
+  "schema_version": 1,
+  "status": "complete_pass",
+  "surviving_counts": {
+    "all": 7362,
+    "test": 557,
+    "train": 6596,
+    "val": 209
+  },
+  "upstream": {
+    "code04_mine_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code08_manifest_sha256": "889fc71a83d19640425669f6c86dced8730e6391e3933673b1d43d8d417d9135",
+    "code09_manifest_sha256": "98d7eb9ee68fa6c4eaf8cfb1a0060d4d42fc1a9c1d3617bcdd8962c5f7e56d45",
+    "code10_manifest_sha256": "94b92c3218e84aadc66e67153f3260179c101e0cafadf113adba8e7846c1d76f",
+    "corrected_code11_iid_sha256": "8ff6654c9352e56f2eff7368ac1ed14b90929f3729cb3bacc5b5dd592b1209e3",
+    "legacy_code11_manifest_sha256": "a71fb7f04dee262617b30d215e0f7cc33f5b6e3c446aa4affa5e8a3a8af8f20f",
+    "sample_regime_manifest_sha256": "b0559a4cc48a05e4c73061b658e9bf688797bc2a92fa967ad3070fcb4a19e3cf",
+    "subset_builder_sha256": "17bee1cdce057e0ac55f0eb0250db8770fee7fff962f096902aedf9ec2185362",
+    "subset_diagnostic_manifest_sha256": "ffffb0db71d7f528a3217daf162259890b7e7261d2352e8e01e30bd4e761ff4a"
+  }
+}

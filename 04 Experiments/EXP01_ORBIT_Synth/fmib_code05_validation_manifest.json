@@ -1,0 +1,154 @@
+{
+  "acceptance_results": {
+    "all_estimates_finite": true,
+    "attenuated_max_abs_estimate": 0.015103664249181747,
+    "attenuated_near_floor_gate": true,
+    "bottleneck_localization_gate": true,
+    "max_seed_sd": 0.014439236771123397,
+    "null_max_abs_estimate": 0.0004017721447679731,
+    "null_near_zero_gate": true,
+    "order_specificity_gate": true,
+    "overall_pass": true,
+    "seed_stability": true,
+    "selective_delta_gate": true,
+    "selective_ho_retention_gate": true,
+    "selective_lo_retention_gate": true,
+    "signal_minus_null_by_order": {
+      "1": 0.5446536789337794,
+      "2": 0.5655893834514751,
+      "3": 0.5437851395044061,
+      "4": 0.592236164957285
+    },
+    "strong_channel_error_gate": true,
+    "strong_channel_max_abs_error": 0.06279917282504188,
+    "strong_channel_min_estimate": 0.5265283253457812,
+    "strong_channel_min_estimate_gate": true
+  },
+  "acceptance_thresholds": {
+    "attenuated_estimate_abs_max": 0.1,
+    "attenuated_truth_max": 0.05,
+    "drop_delta_threshold": 0.2,
+    "max_seed_sd": 0.08,
+    "null_estimate_abs_max": 0.08,
+    "order_signal_minus_null_min": 0.25,
+    "selective_delta_max": -0.5,
+    "selective_ho_retention_max": 0.3,
+    "selective_lo_retention_min": 0.7,
+    "strong_estimate_min": 0.35,
+    "strong_max_abs_error": 0.15,
+    "strong_truth_min": 0.3,
+    "walsh_reconstruction_max_abs": 5e-05
+  },
+  "code_name": "ORBIT-FMIB CODE 05",
+  "device": "cpu",
+  "estimator_protocol": {
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "product_of_marginals": "Code-04 nonzero cyclic-shift protocol",
+    "reported_estimate": "held-out test only",
+    "selection": "validation only",
+    "source": "Exact train_mine implementation imported from Code 04.",
+    "standardization": "train statistics only",
+    "training_config": {
+      "batch_size": 256,
+      "eval_every": 25,
+      "grad_clip_norm": 5.0,
+      "hidden_width": 64,
+      "learning_rate": 0.001,
+      "max_steps": 1000,
+      "min_improvement": 0.0001,
+      "n_hidden_layers": 2,
+      "n_test": 1024,
+      "n_total": 8192,
+      "n_train": 6144,
+      "n_val": 1024,
+      "patience_evals": 10,
+      "weight_decay": 0.0
+    }
+  },
+  "expected_drop_stage_by_order": {
+    "selective_ho_bottleneck": {
+      "1": null,
+      "2": null,
+      "3": 4,
+      "4": 4
+    },
+    "staggered_bottleneck": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6
+    }
+  },
+  "file_sha256": {
+    "fmib_code05_layer_order_summary.csv": "e6a5eb008ae25194f7e71624a1e0cec6efc7b151ea7ef2921f207d466f56627e",
+    "fmib_code05_seed_results.csv": "bece8a39a0c26d8389655acb37b67d09e2c5ffbb839ff25f4051c644f8a8aeff"
+  },
+  "interpretation_limits": [
+    "Synthetic channels are calibration instruments, not biological neural representations.",
+    "MINE values are finite-sample DV lower-bound estimates and may be slightly negative near independence.",
+    "Passing Code 05 validates the measurement pipeline under the frozen high-contrast synthetic conditions; it does not guarantee detection of arbitrarily weak GB1 effects.",
+    "The context-side I(Q_k;R_l,k) coordinate is not validated here; Phase 1 remains centered on I(R_l,k;E_k).",
+    "No GB1/ESM-2 biological conclusion is permitted if overall_pass is false."
+  ],
+  "observed_drop_stage_by_order": {
+    "selective_ho_bottleneck": {
+      "1": null,
+      "2": null,
+      "3": 4,
+      "4": 4
+    },
+    "staggered_bottleneck": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6
+    }
+  },
+  "overall_pass": true,
+  "purpose": "End-to-end synthetic validation of order-resolved target-side ORBIT-FMIB before GB1/ESM-2 interpretation.",
+  "sample_unit": {
+    "context_split_counts": {
+      "test": 512,
+      "train": 3072,
+      "val": 512
+    },
+    "primary": "(synthetic context/cube, Walsh subset) pooled within interaction order",
+    "split_unit": "synthetic context/cube",
+    "subsets_per_order": {
+      "1": 4,
+      "2": 6,
+      "3": 4,
+      "4": 1
+    }
+  },
+  "schema_version": 1,
+  "selective_retention": {
+    "delta_ho_lo": -0.9618027263222182,
+    "ho_retention": 0.021290837318121064,
+    "lo_retention": 0.9830935636403393,
+    "retain_1": 0.991149182784356,
+    "retain_2": 0.9750379444963225,
+    "retain_3": 0.018305553010812572,
+    "retain_4": 0.024276121625429557
+  },
+  "torch_version": "2.12.1+cpu",
+  "upstream_provenance": {
+    "code03_manifest_path": "C:\\Users\\mrahi\\ORBIT FMIB\\04 Experiments\\EXP01_ORBIT_Synth\\orbit_synth_manifest.json",
+    "code03_manifest_sha256": "8f8eb39df2ff25b81b9ede8803985c2ca0983fcc2bd5353ad8a9279871eab1d7",
+    "code04_calibration_overall_pass": true,
+    "code04_manifest_path": "C:\\Users\\mrahi\\ORBIT FMIB\\04 Experiments\\EXP03_MI\\mine_validation_manifest.json",
+    "code04_manifest_sha256": "29abaff415ccfb2f4194fbd82a3b456fb54e9b308fba501a222a1e20b66151cd",
+    "code04_pinned_code03_match": true,
+    "code04_source_path": "C:\\Users\\mrahi\\ORBIT FMIB\\03 Code\\04_validate_mi_estimator.py",
+    "code04_source_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab"
+  },
+  "walsh_audit": {
+    "max_absent_order_energy_fraction": 4.3814906234809616e-33,
+    "max_coefficient_abs_error": 1.1102230246251565e-16,
+    "max_hidden_roundtrip_abs_error": 0.0
+  }
+}

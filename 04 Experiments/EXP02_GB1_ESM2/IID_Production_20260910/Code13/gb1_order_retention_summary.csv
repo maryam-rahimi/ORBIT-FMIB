@@ -1,0 +1,5 @@
+order_k,n_subsets_expected,n_subsets_estimable,all_subsets_estimable,retain_k,retain_k_status
+1,4,4,True,0.9604285560531535,estimable_all_subsets
+2,6,6,True,0.971326691060321,estimable_all_subsets
+3,4,4,True,0.9100522962325894,estimable_all_subsets
+4,1,1,True,0.8076468256783133,estimable_all_subsets

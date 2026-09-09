@@ -1,0 +1,86 @@
+{
+  "authoritative_inputs": {
+    "primary_contrast": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_retention_contrast.csv",
+      "sha256": "385676dc10160eb63eb8e8bc19c84f6de177284239d55ec3639457aeb98e3bb0"
+    },
+    "primary_order": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_order_retention_summary.csv",
+      "sha256": "d072e8485bc4f34af1e7f1a02642ef404f54cb4e7be5c3d4f6f9f7eb1a3ab721"
+    },
+    "primary_subset": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_subset_retention.csv",
+      "sha256": "2134555f05ad60edd0acd8743b67dfd42a74957e46bc6b5b7dcece983b816616"
+    },
+    "sensitivity_contrast": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_contrast.json",
+      "sha256": "432cfa288ce7cf72c62e14758fbbc1925b817e50d44fc0c3d3d1b3190f0d85ee"
+    },
+    "sensitivity_manifest": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_manifest.json",
+      "sha256": "2d48fb46913da92552b82ba639a1dd80c2a1f30ba77ddda80ee7bf97565cbc1e"
+    },
+    "sensitivity_order": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_order_retention.csv",
+      "sha256": "b0b82c5086d9ee76a62189e87b9c1ce4c265e679ae30bdc8572acc220310bff7"
+    },
+    "sensitivity_subset": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code14/DeleteOneIdentityPilot/position41_L/delete_one_identity_subset_retention.csv",
+      "sha256": "7c8dc90869ffe25cccedd9860d138b6b0f927ce5a89422491ba24ecd2699e09c"
+    }
+  },
+  "code15_source_sha256": "4b9e2e7d26e9edae0325290c674413df4228c8d8a3047d485bc6cf57c32022a6",
+  "code_name": "ORBIT-FMIB CODE 15 \u2014 OVERLEAF RESULTS EXPORT",
+  "outputs": {
+    "figure_order_retention_primary_sensitivity.pdf": {
+      "bytes": 20543,
+      "path": "05 Results/Overleaf/figure_order_retention_primary_sensitivity.pdf",
+      "sha256": "eb25736b9904e5ea87554ef32bd3ec0442226ad1292e693ba82bacdbc715df92"
+    },
+    "figure_subset_retention_primary.pdf": {
+      "bytes": 17176,
+      "path": "05 Results/Overleaf/figure_subset_retention_primary.pdf",
+      "sha256": "8b84ada0d7f0e2b20e4e0439a54f9f1b34c4fb372c9c2a3b9b0ba619d9df93eb"
+    },
+    "figure_subset_retention_primary_vs_sensitivity.pdf": {
+      "bytes": 16225,
+      "path": "05 Results/Overleaf/figure_subset_retention_primary_vs_sensitivity.pdf",
+      "sha256": "181eaf0abae40d2f34abbb405e8ee96e370020ff80702784f1801f55fa72b3d9"
+    },
+    "orbit_result_macros.tex": {
+      "bytes": 1114,
+      "path": "05 Results/Overleaf/orbit_result_macros.tex",
+      "sha256": "af365118992808595d699c29aa38831132abe41a7bf288f997ba35092bea0802"
+    },
+    "table_order_retention_primary_sensitivity.tex": {
+      "bytes": 944,
+      "path": "05 Results/Overleaf/table_order_retention_primary_sensitivity.tex",
+      "sha256": "df444e7988e26d0de9434e10ce34e82b60f23fa716874e65c95b4e118ad2b705"
+    },
+    "table_subset_retention_primary.tex": {
+      "bytes": 976,
+      "path": "05 Results/Overleaf/table_subset_retention_primary.tex",
+      "sha256": "e2566c6ed3e9f70444d40100c06140f2326045c1b91d19ac7b340057303cbcd6"
+    },
+    "table_subset_retention_replication.tex": {
+      "bytes": 1441,
+      "path": "05 Results/Overleaf/table_subset_retention_replication.tex",
+      "sha256": "db57b8c52e7ff17c57f57bceffccc8aeaf65681dcfb3275541a43a8104be3e4c"
+    },
+    "table_subset_retention_sensitivity.tex": {
+      "bytes": 1053,
+      "path": "05 Results/Overleaf/table_subset_retention_sensitivity.tex",
+      "sha256": "9069f195e9fdae7d189a15adbfff33b4263478a49a8f9b03b52765d971d7690a"
+    }
+  },
+  "overall_pass": true,
+  "policy": {
+    "figures_generated_directly_from_authoritative_outputs": true,
+    "latex_macros_generated_directly_from_authoritative_outputs": true,
+    "paper_result_values_manually_entered": false,
+    "sensitivity_analysis_is_formal_inference": false,
+    "tables_generated_directly_from_authoritative_outputs": true
+  },
+  "schema_version": "1.0",
+  "status": "complete_pass"
+}

@@ -1,0 +1,117 @@
+{
+  "acceptance_results": {
+    "all_summary_diagnostics_finite": true,
+    "code03_attenuated_estimate": 0.01674876693222258,
+    "code03_attenuated_is_near_floor": true,
+    "code03_attenuated_vs_strong_gate": true,
+    "max_seed_sd": 0.003381067459132252,
+    "overall_pass": true,
+    "scalar_error_le_tolerance": true,
+    "scalar_max_abs_error": 0.015981777149366994,
+    "scalar_monotonic": true,
+    "scalar_null_abs_le_0p05": true,
+    "scalar_strong_signal_fraction": 1.031286169694354,
+    "scalar_strong_signal_gate": true,
+    "seed_stability": true,
+    "vector_main_error_le_tolerance": true,
+    "vector_main_max_abs_error": 0.0386114357839924,
+    "vector_monotonic": true,
+    "vector_null_abs_le_0p05": true,
+    "vector_strong_signal_fraction": 0.934482209121692,
+    "vector_strong_signal_gate": true
+  },
+  "acceptance_thresholds": {
+    "attenuated_max_estimate": 0.1,
+    "attenuated_max_fraction_of_strong": 0.25,
+    "max_seed_sd": 0.05,
+    "null_abs_tolerance": 0.05,
+    "scalar_max_abs_error": 0.08,
+    "strong_signal_min_fraction_of_truth": 0.7,
+    "vector_main_max_abs_error": 0.1
+  },
+  "code03_vector_calibration": {
+    "analytic_formula_nats": "0.5*log(1+gain^2/noise_std^2)",
+    "attenuated_gain": 0.15,
+    "gain_values": [
+      0.0,
+      0.15,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "hidden_dim": 16,
+    "manifest_path": "C:\\Users\\mrahi\\ORBIT FMIB\\04 Experiments\\EXP01_ORBIT_Synth\\orbit_synth_manifest.json",
+    "manifest_sha256": "8f8eb39df2ff25b81b9ede8803985c2ca0983fcc2bd5353ad8a9279871eab1d7",
+    "noise_std": 1.0,
+    "signal_gain": 1.5
+  },
+  "code_name": "ORBIT-FMIB CODE 04",
+  "critic_seeds": [
+    11,
+    23,
+    37
+  ],
+  "data_seeds": {
+    "direction": 20260904,
+    "scalar_base": 20260901,
+    "split": 20260903,
+    "vector_base": 20260902
+  },
+  "device": "cpu",
+  "file_sha256": {
+    "mine_condition_summary.csv": "df47ae90fed94bf55e1fe485ef673e3d7cbd3eb24f2cba287d77a999f17f2952",
+    "mine_seed_results.csv": "41d0cb6f545642593820fb4b085fd02deeb8e97b30258765937150b6b722e836"
+  },
+  "flow_nib_relation": {
+    "not_implemented_here": [
+      "FlowNIB alpha(t) joint two-critic schedule",
+      "effective-dimension MI normalization",
+      "context-side I(Q_k;R_l,k) validation"
+    ],
+    "reason": "Phase-1 primary confirmatory quantity is raw target-side I(R_l,k;E_k).",
+    "shared_core": "MINE-style DV lower bound; frozen upstream representation; joint versus shuffled product-of-marginals pairs."
+  },
+  "interpretation_limits": [
+    "MINE values are finite-sample variational lower-bound estimates, not exact MI.",
+    "Small negative estimates can occur near the independence floor and are not clipped.",
+    "This calibration does not establish validity for arbitrary unseen dimensionalities/distributions.",
+    "Code 05 must still demonstrate correct order recovery and bottleneck localization on the actual Code-03 synthetic tensors.",
+    "No biological conclusion is permitted if Code 04 or Code 05 fails."
+  ],
+  "overall_pass": true,
+  "purpose": "Pre-biological validation of the MINE/DV mutual-information measurement engine.",
+  "scalar_calibration": {
+    "analytic_formula_nats": "-0.5*log(1-rho^2)",
+    "rho_values": [
+      0.0,
+      0.2,
+      0.5,
+      0.8
+    ]
+  },
+  "schema_version": 1,
+  "splits": {
+    "reported_estimate": "held-out test only",
+    "selection": "validation only",
+    "test": 1024,
+    "train": 6144,
+    "val": 1024
+  },
+  "torch_version": "2.12.1+cpu",
+  "training_config": {
+    "batch_size": 256,
+    "eval_every": 25,
+    "grad_clip_norm": 5.0,
+    "hidden_width": 64,
+    "learning_rate": 0.001,
+    "max_steps": 1000,
+    "min_improvement": 0.0001,
+    "n_hidden_layers": 2,
+    "n_test": 1024,
+    "n_total": 8192,
+    "n_train": 6144,
+    "n_val": 1024,
+    "patience_evals": 10,
+    "weight_decay": 0.0
+  }
+}

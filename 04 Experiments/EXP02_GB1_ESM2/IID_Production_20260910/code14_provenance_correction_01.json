@@ -1,0 +1,13 @@
+{
+  "correction_name": "ORBIT-FMIB CODE 14 — PROVENANCE CORRECTION 01",
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "reason": "A one-character transcription error was introduced when manually copying the SHA-256 of 03 Code/04_validate_mi_estimator.py into the Code-14 contracts and preflight skeleton.",
+  "scientific_protocol_changed": false,
+  "estimator_code_changed": false,
+  "inference_executed_before_correction": false,
+  "incorrect_transcribed_code04_sha256": "ecdb937dac3b943e21bc1aaaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+  "correct_code04_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+  "correct_hash_length": 64,
+  "parent_inference_contract_sha256": "e32ef2c8454fde64ecd4a5c93988814c202f1a0299dee95512f95cabf6f40906",
+  "bootstrap_implementation_contract_sha256": "b3cf9937ecba19a818ba7b97fabb9cb60a015e5d1ff41e5a5cc6ab58923e81e5"
+}

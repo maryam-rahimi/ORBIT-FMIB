@@ -1,0 +1,165 @@
+{
+  "code_name": "ORBIT-FMIB CODE 16 \u2014 PAPER FIGURES FOR LAYERWISE EPISTATIC DYNAMICS",
+  "figure_contract": {
+    "main_panel_A": "order-level peak-normalized trajectories across L0..L30",
+    "main_panel_B": "15-subset epistatic information transit map across L0..L30",
+    "main_panel_C": "subset-level peak-to-final retention",
+    "secondary_peak_timing": "mean-trajectory peak, first >=90%-of-peak layer, and critic-seed peak range",
+    "subset_row_order": [
+      {
+        "order_k": 1,
+        "subset_mask": 1,
+        "subset_positions": "{39}"
+      },
+      {
+        "order_k": 1,
+        "subset_mask": 2,
+        "subset_positions": "{40}"
+      },
+      {
+        "order_k": 1,
+        "subset_mask": 4,
+        "subset_positions": "{41}"
+      },
+      {
+        "order_k": 1,
+        "subset_mask": 8,
+        "subset_positions": "{54}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 3,
+        "subset_positions": "{39,40}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 5,
+        "subset_positions": "{39,41}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 6,
+        "subset_positions": "{40,41}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 9,
+        "subset_positions": "{39,54}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 10,
+        "subset_positions": "{40,54}"
+      },
+      {
+        "order_k": 2,
+        "subset_mask": 12,
+        "subset_positions": "{41,54}"
+      },
+      {
+        "order_k": 3,
+        "subset_mask": 7,
+        "subset_positions": "{39,40,41}"
+      },
+      {
+        "order_k": 3,
+        "subset_mask": 11,
+        "subset_positions": "{39,40,54}"
+      },
+      {
+        "order_k": 3,
+        "subset_mask": 13,
+        "subset_positions": "{39,41,54}"
+      },
+      {
+        "order_k": 3,
+        "subset_mask": 14,
+        "subset_positions": "{40,41,54}"
+      },
+      {
+        "order_k": 4,
+        "subset_mask": 15,
+        "subset_positions": "{39,40,41,54}"
+      }
+    ]
+  },
+  "inputs": {
+    "gb1_layerwise_dynamics_manifest.json": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_dynamics_manifest.json",
+      "sha256": "adc45aa5acd521a3e8d21072179106d12c85f481ec705f83bcc96c69216c25bb"
+    },
+    "gb1_layerwise_order_summary.csv": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_order_summary.csv",
+      "sha256": "ca70076f8cf32b60bd4c1cae857e268c77ae63b296ae236ecc0c3a328f865536"
+    },
+    "gb1_layerwise_subset_normalized_long.csv": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_normalized_long.csv",
+      "sha256": "fa761e176564f17b725ef9fe10ce68656f2234ad4a84545e969e6cddc2f070c5"
+    },
+    "gb1_layerwise_subset_summary.csv": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_summary.csv",
+      "sha256": "3235f884d327c8b4a29fd0e29208e1ae85fd4e596bea045c791abf853688fbeb"
+    },
+    "gb1_order_layerwise_peak_normalized.csv": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_order_layerwise_peak_normalized.csv",
+      "sha256": "afe0c313c96fdb1ad55022220904b2a5cb225b980f5aec9b7be260f6cae436d3"
+    }
+  },
+  "interpretation_limits": [
+    "Figures are descriptive and do not constitute formal statistical inference.",
+    "Neural dependence scores are comparative and are not calibrated exact MI in nats.",
+    "Order-level curves are descriptive averages after within-subset peak normalization.",
+    "The fourth-order curve represents one fixed positional subset.",
+    "Critic-seed peak ranges are estimator-stability diagnostics, not biological confidence intervals.",
+    "No causal-use claim is supported by these figures."
+  ],
+  "output_sha256": {
+    "figure_gb1_layerwise_dynamics_key_values.txt": "dcbea5a53770782385bf736f437da5e86c27b1b5c016034ac897e3b48bf18ff4",
+    "figure_gb1_layerwise_dynamics_main.pdf": "36b2f6d8ce57444f5229677c1be9986ac5bf55766c1fc29b4fb905f1077a399a",
+    "figure_gb1_layerwise_dynamics_main.png": "c970a843a917b3e5f00f00b95faaf4cbaf743b351c7b42ef5f68f50183b765e3",
+    "figure_gb1_peak_timing_stability.pdf": "b5400024bf2f2300701551b696b266f9987413620dfa6daa60e5ab7b8d625b08",
+    "panelA_order_trajectories.pdf": "e6e65d360e96ecd6a97a2a40745f7a123944a66202d4520bf665ac05234c1af6",
+    "panelB_subset_transit_map.pdf": "43dee6e631e52f063cc92545572a7cf52d5aa9a419f66f107190c5a67cee84ed",
+    "panelC_peak_to_final_survival.pdf": "87ee162f6cd2ea9c89b307e9d0592f70a0462489e75fc2bae5983731402b89e4"
+  },
+  "outputs": {
+    "figure_gb1_layerwise_dynamics_key_values.txt": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_key_values.txt",
+    "figure_gb1_layerwise_dynamics_main.pdf": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_main.pdf",
+    "figure_gb1_layerwise_dynamics_main.png": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_layerwise_dynamics_main.png",
+    "figure_gb1_peak_timing_stability.pdf": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/figure_gb1_peak_timing_stability.pdf",
+    "panelA_order_trajectories.pdf": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelA_order_trajectories.pdf",
+    "panelB_subset_transit_map.pdf": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelB_subset_transit_map.pdf",
+    "panelC_peak_to_final_survival.pdf": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code16/panelC_peak_to_final_survival.pdf"
+  },
+  "overall_pass": true,
+  "plot_parameters": {
+    "dpi": 300,
+    "font_size": 9.5,
+    "heatmap_colormap": "viridis",
+    "matplotlib_backend": "Agg",
+    "order_colors": "matplotlib tab10 first four entries"
+  },
+  "production_source": "03 Code/16_make_gb1_layerwise_figures_replication.py",
+  "production_source_sha256": "9de338d29ab9f28748b76e00e9cb0b451e46cc34a4d71153ab8a26a03205f54d",
+  "purpose": "Paper-ready visualization of frozen Code15 layerwise epistatic dynamics without new biological estimation or inference.",
+  "schema_version": 1,
+  "scientific_contract": {
+    "biological_scores_modified": false,
+    "esm2_refitting_performed": false,
+    "formal_inference_performed": false,
+    "heatmap_definition": "within-subset peak-normalized score N_l,S",
+    "input_source": "frozen corrected-IID Code15 outputs only",
+    "mine_refitting_performed": false,
+    "negative_scores_clamped": false,
+    "null_scores_subtracted": false,
+    "order_curve_definition": "descriptive mean of independently peak-normalized fixed-subset trajectories",
+    "retention_panel_definition": "Code15 retain_s = final / within-subset peak",
+    "seed_peak_range_definition": "min..max peak layer across critic seeds; estimator-stability diagnostic only"
+  },
+  "status": "complete_pass",
+  "upstream_code15": {
+    "manifest": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_dynamics_manifest.json",
+    "manifest_sha256": "adc45aa5acd521a3e8d21072179106d12c85f481ec705f83bcc96c69216c25bb",
+    "production_source_sha256": "1ed653affb487c49617eaf0afd0a6e023338f1971cdee28ef86e396b38ab890a"
+  }
+}

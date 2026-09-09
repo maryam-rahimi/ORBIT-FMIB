@@ -1,0 +1,31 @@
+ORBIT-FMIB CODE 16 — KEY VALUES USED BY THE FIGURES
+Generated directly from frozen Code-15 outputs.
+
+ORDER-LEVEL PEAK-NORMALIZED DYNAMICS
+k=1: curve_peak=L30; peak_value=0.960429; final=0.960429; largest_adjacent_drop=L10->L11 (-0.058137)
+k=2: curve_peak=L30; peak_value=0.971327; final=0.971327; largest_adjacent_drop=L27->L28 (-0.080374)
+k=3: curve_peak=L11; peak_value=0.962588; final=0.910052; largest_adjacent_drop=L16->L17 (-0.079179)
+k=4: curve_peak=L14; peak_value=1.000000; final=0.807647; largest_adjacent_drop=L11->L12 (-0.550552)
+
+FIXED-SUBSET PEAK LAYERS AND RETENTION
+S01 {39} k=1: peak=L28; first90=L3; retain=0.993611; seed_peak_range=L7..L28
+S02 {40} k=1: peak=L12; first90=L1; retain=0.946139; seed_peak_range=L10..L13
+S04 {41} k=1: peak=L16; first90=L4; retain=0.901964; seed_peak_range=L12..L30
+S08 {54} k=1: peak=L30; first90=L5; retain=1.000000; seed_peak_range=L28..L30
+S03 {39,40} k=2: peak=L27; first90=L6; retain=0.958623; seed_peak_range=L10..L27
+S05 {39,41} k=2: peak=L12; first90=L10; retain=0.966407; seed_peak_range=L13..L17
+S06 {40,41} k=2: peak=L13; first90=L3; retain=0.981589; seed_peak_range=L8..L13
+S09 {39,54} k=2: peak=L7; first90=L3; retain=0.996505; seed_peak_range=L9..L30
+S10 {40,54} k=2: peak=L12; first90=L7; retain=0.998049; seed_peak_range=L10..L30
+S12 {41,54} k=2: peak=L29; first90=L5; retain=0.926787; seed_peak_range=L19..L30
+S07 {39,40,41} k=3: peak=L15; first90=L3; retain=0.788171; seed_peak_range=L12..L28
+S11 {39,40,54} k=3: peak=L11; first90=L4; retain=0.929166; seed_peak_range=L13..L30
+S13 {39,41,54} k=3: peak=L13; first90=L8; retain=0.970217; seed_peak_range=L12..L30
+S14 {40,41,54} k=3: peak=L10; first90=L7; retain=0.952656; seed_peak_range=L10..L14
+S15 {39,40,41,54} k=4: peak=L14; first90=L6; retain=0.807647; seed_peak_range=L14..L29
+
+INTERPRETATION BOUNDARY
+- Descriptive visualization only; no formal inference.
+- Order curves are means of independently peak-normalized fixed-subset trajectories.
+- k=4 contains one positional subset.
+- Critic-seed peak ranges are estimator-stability diagnostics, not biological CIs.

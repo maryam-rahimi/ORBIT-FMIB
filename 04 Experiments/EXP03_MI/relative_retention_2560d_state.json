@@ -1,0 +1,87 @@
+{
+  "code_name": "ORBIT-FMIB RELATIVE-RETENTION CALIBRATION",
+  "completed_fits": 24,
+  "expected_fits": 24,
+  "fingerprint": {
+    "code04_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "device_type": "cuda",
+    "direction_seed": 20260922,
+    "final_nodes": {
+      "1": "final_k1",
+      "2": "final_k2",
+      "3": "final_k3",
+      "4": "final_k4"
+    },
+    "nodes": [
+      [
+        "null",
+        0.0,
+        "null",
+        0
+      ],
+      [
+        "layer_00_start",
+        0.15,
+        "common",
+        0
+      ],
+      [
+        "layer_01_mid",
+        0.5,
+        "common",
+        1
+      ],
+      [
+        "layer_02_peak",
+        1.5,
+        "common",
+        2
+      ],
+      [
+        "final_k1",
+        1.2,
+        "final",
+        1
+      ],
+      [
+        "final_k2",
+        1.0,
+        "final",
+        2
+      ],
+      [
+        "final_k3",
+        0.5,
+        "final",
+        3
+      ],
+      [
+        "final_k4",
+        0.15,
+        "final",
+        4
+      ]
+    ],
+    "noise_seed_base": 20260930,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "schema_version": 1,
+    "sigma": 1.0,
+    "signal_separation_min": 0.05,
+    "target_seed": 20260921
+  },
+  "fingerprint_sha256": "48e5a7c6f353fe43f4626676bee5daf219ede673149cf43c7f7f7e1869ed4901",
+  "manifest_sha256": "4a63286fd4caf0adf30056f9652e55bda595c629ba8804a1060c250cdfc70cc2",
+  "retention_sha256": "efecf109bde48ed03b55d179199ca0c9af7d56812492068b616d1d963e4bc416",
+  "schema_version": 1,
+  "seed_results_sha256": "94bc87369e34f18713b8c8aef8b08330da078a67c1c3b74898e300c30ddb4189",
+  "seed_retention_sha256": "e8bd6d68ca2f0a666a5764a5b0c5b718aeed9e344f1e6d7c9e5bc36f1fe70690",
+  "status": "PASS",
+  "summary_sha256": "d3ae7393f430c763fe110d58c9c44cc71c7853dc854ae97e9b9a7693a6e2532e"
+}

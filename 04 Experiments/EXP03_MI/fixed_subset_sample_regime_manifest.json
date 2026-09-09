@@ -1,0 +1,156 @@
+{
+  "acceptance_thresholds": {
+    "main_order_gains": [
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "max_strong_signal_seed_sd": 0.05,
+    "null_abs_tolerance": 0.05,
+    "strong_gains": [
+      1.0,
+      1.5
+    ],
+    "strong_min_above_own_replicate_null": 0.05
+  },
+  "code_name": "ORBIT-FMIB GB1 FIXED-SUBSET SAMPLE-REGIME CALIBRATION",
+  "file_sha256": {
+    "fixed_subset_sample_regime_gain_summary.csv": "16569ca709873f0409eda755428453521dcd58d8937c29a27cfd269e57cb8b41",
+    "fixed_subset_sample_regime_replicate_summary.csv": "eb912391e6ad7830df5c8025002c7609a9669350242615bc6d268fc19815d480",
+    "fixed_subset_sample_regime_seed_results.csv": "c823d6e299c3b85f6b89b20e368331cb4cc20ee65c91049139fc354a4ca93133"
+  },
+  "gates": {
+    "absolute_mi_accuracy_required": false,
+    "all_replicate_null_abs_le_code04_tolerance": true,
+    "all_replicate_summary_diagnostics_finite": true,
+    "all_replicates_gain_1p5_gt_1p0": true,
+    "all_replicates_strong_signal_ge_null_plus_0p05": true,
+    "all_replicates_strong_signal_positive": true,
+    "descriptive_detectability": {
+      "gain_0.00": {
+        "all_replicates_mean_ge_own_null_plus_0p05": false,
+        "n_replicates_meeting_criterion": 0,
+        "true_mi_nats": 0.0
+      },
+      "gain_0.15": {
+        "all_replicates_mean_ge_own_null_plus_0p05": false,
+        "n_replicates_meeting_criterion": 0,
+        "true_mi_nats": 0.011125304467409862
+      },
+      "gain_0.50": {
+        "all_replicates_mean_ge_own_null_plus_0p05": false,
+        "n_replicates_meeting_criterion": 0,
+        "true_mi_nats": 0.11157177565710488
+      },
+      "gain_1.00": {
+        "all_replicates_mean_ge_own_null_plus_0p05": true,
+        "n_replicates_meeting_criterion": 3,
+        "true_mi_nats": 0.34657359027997264
+      },
+      "gain_1.50": {
+        "all_replicates_mean_ge_own_null_plus_0p05": true,
+        "n_replicates_meeting_criterion": 3,
+        "true_mi_nats": 0.5893274981708231
+      }
+    },
+    "global_null_abs_le_code04_tolerance": true,
+    "hard_gates": [
+      "global_null_abs_le_code04_tolerance",
+      "all_replicate_null_abs_le_code04_tolerance",
+      "main_signal_ordering_0_lt_0p5_lt_1_lt_1p5",
+      "all_replicates_strong_signal_ge_null_plus_0p05",
+      "all_replicates_strong_signal_positive",
+      "strong_signal_seed_stability_le_code04_threshold",
+      "all_replicates_gain_1p5_gt_1p0",
+      "all_replicate_summary_diagnostics_finite"
+    ],
+    "main_signal_ordering_0_lt_0p5_lt_1_lt_1p5": true,
+    "max_strong_signal_seed_sd": 0.03940567278729188,
+    "overall_pass": true,
+    "strong_signal_seed_stability_le_code04_threshold": true
+  },
+  "interpretation_limits": [
+    "This calibration tests dependence-detection behavior, not exact absolute MI accuracy in nats.",
+    "Gain 0.15 and gain 0.50 are retained to characterize the estimator floor; only gains 1.0 and 1.5 are hard-gated for robust signal separation.",
+    "Passing this calibration does not prove that every non-Gaussian biological dependence is detectable.",
+    "No PCA/projection, clamping, or null subtraction is used.",
+    "Critic seeds and synthetic replicates are estimator/calibration replicates, not biological replicates."
+  ],
+  "outputs": {
+    "gain_summary": "fixed_subset_sample_regime_gain_summary.csv",
+    "replicate_summary": "fixed_subset_sample_regime_replicate_summary.csv",
+    "seed_results": "fixed_subset_sample_regime_seed_results.csv"
+  },
+  "overall_pass": true,
+  "purpose": "Validate dependence-detection behavior of the exact frozen 2560-D Code-04 MINE estimator under the exact 7352/245/613 fixed-subset GB1 sample regime.",
+  "run_fingerprint": {
+    "absolute_mi_accuracy_claimed": false,
+    "analysis_contract": "fixed_subset_sample_regime_dependence_detection",
+    "code04_source_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_manifest_sha256": "a71fb7f04dee262617b30d215e0f7cc33f5b6e3c446aa4affa5e8a3a8af8f20f",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "device_type": "cuda",
+    "gains": [
+      0.0,
+      0.15,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "n_test": 613,
+    "n_total": 8210,
+    "n_train": 7352,
+    "n_val": 245,
+    "replicate_ids": [
+      101,
+      211,
+      307
+    ],
+    "representation_dim": 2560,
+    "schema_version": 1,
+    "sigma": 1.0,
+    "subset_diagnostic_source_sha256": "17bee1cdce057e0ac55f0eb0250db8770fee7fff962f096902aedf9ec2185362",
+    "target_dim": 1
+  },
+  "run_fingerprint_sha256": "243b79cd1f7fe44a550bd0fdd93af338ebf0a38db9660d1abcbf60a4cba02e76",
+  "schema_version": 1,
+  "source_sha256": "c452759d1b1aaed1daf4fd363f97b48daaae39c3cbeafb8ff7691aebc12081f9",
+  "synthetic_contract": {
+    "absolute_mi_accuracy_required": false,
+    "analytic_formula": "0.5*log(1+gain^2/sigma^2)",
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "gains": [
+      0.0,
+      0.15,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "n_test": 613,
+    "n_total": 8210,
+    "n_train": 7352,
+    "n_val": 245,
+    "replicate_ids": [
+      101,
+      211,
+      307
+    ],
+    "representation_dim": 2560,
+    "sigma": 1.0,
+    "target_dim": 1
+  },
+  "upstream": {
+    "code04_source_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_manifest_sha256": "a71fb7f04dee262617b30d215e0f7cc33f5b6e3c446aa4affa5e8a3a8af8f20f",
+    "subset_diagnostic_source_sha256": "17bee1cdce057e0ac55f0eb0250db8770fee7fff962f096902aedf9ec2185362"
+  }
+}

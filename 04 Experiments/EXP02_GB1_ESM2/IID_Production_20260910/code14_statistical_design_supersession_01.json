@@ -1,0 +1,70 @@
+{
+  "contract_name": "ORBIT-FMIB CODE 14 — STATISTICAL DESIGN SUPERSESSION 01",
+  "status": "FROZEN_BEFORE_INFERENCE",
+
+  "supersedes": {
+    "bootstrap_implementation_contract_sha256": "b3cf9937ecba19a818ba7b97fabb9cb60a015e5d1ff41e5a5cc6ab58923e81e5",
+    "bootstrap_execution_contract_sha256": "b8ac4b9c71f6fa2e8605e376a19bef1ffe031f63b285879c90ab9222f3e04d9e"
+  },
+
+  "reason_for_supersession": "Audit of Code-06 and Code-07 showed that the 8,210 strict GB1 cubes are overlapping WT-anchored hypercubes generated from crossed amino-acid alternative identities at positions 39, 40, 41, and 54. Individual cube rows therefore do not constitute independent biological sampling units. The previously frozen independent-cube bootstrap could underestimate uncertainty through pseudoreplication.",
+
+  "evidence_from_pipeline": {
+    "complete_cubes": 109235,
+    "strict_cubes": 8210,
+    "mixed_cubes_excluded": 101025,
+    "strict_original_counts": {
+      "estimator_train": 7352,
+      "estimator_val": 245,
+      "estimator_test": 613
+    },
+    "cube_definition": "Each cube is defined by one non-WT alternative amino-acid identity at each of the four GB1 positions and contains the 16 WT/alternative combinatorial vertices.",
+    "shared_structure": "All cubes share WT; cubes sharing one or more alternative identities can also share non-WT vertices."
+  },
+
+  "previous_design_status": {
+    "independent_cube_bootstrap_authoritative_for_final_inference": false,
+    "full_inferential_bootstrap_replicates_run_under_previous_design": 0,
+    "previous_single_cell_validation_used_for_inference": false,
+    "previous_single_cell_validation_purpose": "implementation validation only"
+  },
+
+  "new_authoritative_resampling_design": {
+    "name": "four_way_crossed_amino_acid_identity_resampling",
+    "crossed_factors": [
+      "alternative_aa_position_39",
+      "alternative_aa_position_40",
+      "alternative_aa_position_41",
+      "alternative_aa_position_54"
+    ],
+    "resampling_with_replacement": true,
+    "identity_resampling_performed_independently_by_position": true,
+    "cube_multiplicity_induced_by_resampled_identity_multiplicities": true,
+    "same_biological_resample_shared_across_all_layers_subsets_and_critic_seeds": true
+  },
+
+  "estimator_partition_contract": {
+    "retain_corrected_iid_estimator_partition": true,
+    "production_iid_split_seed": 20260910,
+    "production_iid_split_sha256": "4b7f1d173de7a979db762f54bfcb90674ab36718f51ee6aef0bb47db91b2ff66",
+    "reintroduce_aa_identity_strict_ood_partition": false,
+    "note": "The corrected IID split remains the MINE train/validation/test estimator partition. Dependence-aware biological resampling must not revert the estimator to the earlier AA-identity-strict OOD protocol."
+  },
+
+  "scientific_statistic_unchanged": {
+    "tau_q99_abs_fixed_subset_null": 0.006777383486429849,
+    "negative_scores_clamped": false,
+    "null_scores_subtracted": false,
+    "critic_seeds": [11, 23, 37],
+    "critic_seeds_are_biological_replicates": false,
+    "peak_layer_reselected_within_every_resample": true,
+    "low_order_definition": [1, 2],
+    "high_order_definition": [3, 4],
+    "primary_statistic": "delta_HO_minus_LO = mean(retain_3, retain_4) - mean(retain_1, retain_2)",
+    "directional_hypothesis": "delta_HO_minus_LO < 0"
+  },
+
+  "interpretation_boundary": "Inference is conditional on the GB1 four-site landscape and its observed amino-acid identity structure. It does not by itself establish a universal population-level claim about all protein positions or all protein foundation models.",
+
+  "inference_executed_before_supersession": false
+}

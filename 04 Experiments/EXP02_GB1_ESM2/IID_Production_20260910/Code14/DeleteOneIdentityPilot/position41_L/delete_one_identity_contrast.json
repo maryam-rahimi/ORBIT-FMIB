@@ -1,0 +1,18 @@
+{
+  "code_name": "ORBIT-FMIB CODE 14 \u2014 FULL-STATISTIC CUBE-BOOTSTRAP RETENTION INFERENCE",
+  "contrast_estimable": true,
+  "deletion_identity": "L",
+  "deletion_position": 41,
+  "delta_ho_minus_lo": -0.1840961511381506,
+  "directional_hypothesis": "delta_ho_minus_lo < 0",
+  "ho_retention": 0.7636173910276365,
+  "included_in_formal_inference": false,
+  "interpretation": "Computational validation output only; not an inferential replicate.",
+  "lo_retention": 0.9477135421657871,
+  "mode": "delete_one_identity_computational_pilot",
+  "retain_1": 0.9401631533479302,
+  "retain_2": 0.9552639309836439,
+  "retain_3": 0.8480781803561832,
+  "retain_4": 0.6791566016990898,
+  "schema_version": 1
+}

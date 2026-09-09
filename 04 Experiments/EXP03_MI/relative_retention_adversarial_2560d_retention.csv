@@ -1,0 +1,17 @@
+scenario,expected,order_k,final_node,true_retention,estimated_relative_retention
+flat_moderate,flat,1,flat_moderate_final_k1,0.18932049837044015,0.02864952456444835
+flat_moderate,flat,2,flat_moderate_final_k2,0.18932049837044015,0.01220126636364176
+flat_moderate,flat,3,flat_moderate_final_k3,0.18932049837044015,0.015516520299942686
+flat_moderate,flat,4,flat_moderate_final_k4,0.18932049837044015,0.01926287437431771
+flat_strong,flat,1,flat_strong_final_k1,0.5880831818567449,0.3572338335638973
+flat_strong,flat,2,flat_strong_final_k2,0.5880831818567449,0.4756725380495413
+flat_strong,flat,3,flat_strong_final_k3,0.5880831818567449,0.3075261717660104
+flat_strong,flat,4,flat_strong_final_k4,0.5880831818567449,0.3897013153781838
+ho_advantage,positive,1,ho_advantage_final_k1,0.018877965989947867,-0.0009567893593234022
+ho_advantage,positive,2,ho_advantage_final_k2,0.18932049837044015,0.02645734562438969
+ho_advantage,positive,3,ho_advantage_final_k3,0.5880831818567449,0.3303175773733737
+ho_advantage,positive,4,ho_advantage_final_k4,0.756793160062722,0.6944509105583451
+ho_loss,negative,1,ho_loss_final_k1,0.756793160062722,0.6725630949145468
+ho_loss,negative,2,ho_loss_final_k2,0.5880831818567449,0.43541886601856555
+ho_loss,negative,3,ho_loss_final_k3,0.18932049837044015,0.013808457324621881
+ho_loss,negative,4,ho_loss_final_k4,0.018877965989947867,-0.0005542784053339134

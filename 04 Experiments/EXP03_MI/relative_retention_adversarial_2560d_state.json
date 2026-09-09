@@ -1,0 +1,89 @@
+{
+  "code_name": "ORBIT-FMIB ADVERSARIAL RELATIVE-RETENTION SUITE",
+  "completed_fits": 60,
+  "expected_fits": 60,
+  "fingerprint": {
+    "code04_sha256": "ecdb937dac3b943e21bc1aaeaf9eab933ab6badc15c446d83595ec363f8053ab",
+    "code11_sha256": "37deee5565d2d9423c0fb2c37b27ac766bece969f229b589e228c76b4aab0fae",
+    "common_nodes": [
+      [
+        "null",
+        0.0
+      ],
+      [
+        "layer_00_start",
+        0.15
+      ],
+      [
+        "layer_01_mid",
+        0.5
+      ],
+      [
+        "layer_02_peak",
+        1.5
+      ]
+    ],
+    "critic_seeds": [
+      11,
+      23,
+      37
+    ],
+    "device_type": "cuda",
+    "direction_seed": 20260942,
+    "flat_permutation_alpha": 0.05,
+    "noise_seed_base": 20260950,
+    "peak_node": "layer_02_peak",
+    "representation_dim": 2560,
+    "scenarios": {
+      "flat_moderate": {
+        "expected": "flat",
+        "gains": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "flat_strong": {
+        "expected": "flat",
+        "gains": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "ho_advantage": {
+        "expected": "positive",
+        "gains": [
+          0.15,
+          0.5,
+          1.0,
+          1.2
+        ]
+      },
+      "ho_loss": {
+        "expected": "negative",
+        "gains": [
+          1.2,
+          1.0,
+          0.5,
+          0.15
+        ]
+      }
+    },
+    "schema_version": 1,
+    "sigma": 1.0,
+    "signal_separation_min": 0.05,
+    "target_seed": 20260941
+  },
+  "fingerprint_sha256": "82312abcb727a8b4360fafea45e79bbac8513d0686c82029bcb2928aabe01cd6",
+  "manifest_sha256": "cd52e62783dcaf0672f4869d040708f8bdd8fcfbd1f9196421768699fc2330e8",
+  "retention_sha256": "86dc063e385c3d823d0cc7c69c898ae0cc2130362e3d9e4867c6864b4f8372ed",
+  "scenario_summary_sha256": "808215b7f0b5908fb87f35dbee80cc5a3b5d4c0f5eaac8a2b741cfdb89e25116",
+  "schema_version": 1,
+  "seed_results_sha256": "b6fba930d9c8a37ac55aaef103754b590199085a44bc260da1b2dc5c4f5128b0",
+  "seed_retention_sha256": "9e00d0b21860c1a08f1e397bedbdf544b9dd98ff88eb0b1292926ead0100bf89",
+  "status": "PASS",
+  "summary_sha256": "ee9d05d522ac72ec0e2624781b416049f06e9a283f0c70c8b15895d2a9b81065"
+}

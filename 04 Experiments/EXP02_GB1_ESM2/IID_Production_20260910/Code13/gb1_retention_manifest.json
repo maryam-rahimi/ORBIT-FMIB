@@ -1,0 +1,102 @@
+{
+  "code_name": "ORBIT-FMIB CODE 13 \u2014 FIXED-SUBSET FLOOR-SAFE RETENTION",
+  "floor_contract": {
+    "documented_tau_guardrail": 0.006777383486429849,
+    "n_null_rows": 225,
+    "null_summary": {
+      "max_abs": 0.009316880669858722,
+      "median": -0.0011123514009846582,
+      "min": -0.009316880669858722,
+      "n": 225,
+      "q95_abs": 0.004683680832386014,
+      "q99_abs": 0.006777383486429849
+    },
+    "quantile_method": "linear interpolation",
+    "source": "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_null_by_derangement.csv",
+    "statistic": "Q0.99(abs(null_score_mean))",
+    "tau": 0.006777383486429849,
+    "threshold_computed_from_source_file": true,
+    "threshold_hardcoded_as_source_of_truth": false
+  },
+  "grid_audit": {
+    "expected_subsets_by_order": {
+      "1": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "2": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        12
+      ],
+      "3": [
+        7,
+        11,
+        13,
+        14
+      ],
+      "4": [
+        15
+      ]
+    },
+    "layers_per_trajectory": 31,
+    "trajectory_count": 15,
+    "trajectory_rows": 465
+  },
+  "inputs": {
+    "fixed_subset_null_file": "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_null_by_derangement.csv",
+    "fixed_subset_null_sha256": "24748e43d9ddc39d429417c2aa840f7262f2482cd3a2ee9cea2a069a60995d02",
+    "trajectory_file": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectories_long.csv",
+    "trajectory_sha256": "ad2e5ec150c5c664e77bc3b877ae0ad79c91314f3dc1494790e4ad6634e8dcf4"
+  },
+  "interpretation_limits": [
+    "Neural-DV scores are comparative dependence scores, not calibrated exact MI in nats.",
+    "Near-floor failure to detect dependence is not proof of zero MI.",
+    "Code 13 computes point retention only; confirmatory uncertainty requires later cube-/subset-aware resampling.",
+    "If a required subset/order is not estimable, the confirmatory contrast remains NA rather than changing the estimand post hoc."
+  ],
+  "output_sha256": {
+    "gb1_order_retention_summary.csv": "d072e8485bc4f34af1e7f1a02642ef404f54cb4e7be5c3d4f6f9f7eb1a3ab721",
+    "gb1_retention_contrast.csv": "385676dc10160eb63eb8e8bc19c84f6de177284239d55ec3639457aeb98e3bb0",
+    "gb1_subset_retention.csv": "2134555f05ad60edd0acd8743b67dfd42a74957e46bc6b5b7dcece983b816616"
+  },
+  "outputs": {
+    "order_retention_summary": "gb1_order_retention_summary.csv",
+    "point_contrast": "gb1_retention_contrast.csv",
+    "subset_retention": "gb1_subset_retention.csv"
+  },
+  "overall_pass": true,
+  "production_source": "03 Code/13_fixed_subset_retention_iid.py",
+  "production_source_sha256": "f681c2e0b8be84557c4f51665b791f53da1c8f1ddd071875a531ac8f115d3f3e",
+  "purpose": "Compute pre-specified floor-safe retention within each fixed positional subset before interaction-order aggregation.",
+  "retention_audit": {
+    "contrast_estimable": true,
+    "n_final_near_floor": 0,
+    "n_subsets_estimable": 15,
+    "n_subsets_not_estimable": 0,
+    "n_subsets_total": 15
+  },
+  "schema_version": 1,
+  "scientific_contract": {
+    "critic_seeds_are_biological_replicates": false,
+    "delta_definition": "HO - LO",
+    "directional_hypothesis": "HO - LO < 0",
+    "eligibility_rule": "max_l D_l,S > tau",
+    "final_near_floor_rule": "|D_30,S| <= tau",
+    "ho_definition": "(Retain_3 + Retain_4) / 2",
+    "inferential_resampling_performed": false,
+    "lo_definition": "(Retain_1 + Retain_2) / 2",
+    "negative_scores_clamped": false,
+    "noneligible_rule": "Retain_S = NA / not estimable",
+    "null_scores_subtracted": false,
+    "order_aggregation": "mean Retain_S within order only if every expected subset for that order is estimable",
+    "primary_measurement_unit": "fixed positional subset S",
+    "retention_formula_if_eligible": "Retain_S = D_30,S / max_l D_l,S"
+  },
+  "status": "complete_pass"
+}

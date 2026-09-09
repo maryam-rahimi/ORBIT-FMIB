@@ -1,0 +1,50 @@
+{
+  "figure": "Figure_subset_conditioning_validation_paper_v6",
+  "principle": "No plotted numerical result is hard-coded; all values are read from source CSV outputs.",
+  "sources": {
+    "04 Experiments/EXP02_GB1_ESM2/gb1_target_mi_seed_results.csv": {
+      "sha256": "9916edc7257c7fe0f125d1abd9b7a094914bcf51aa16b85fd6a8ffa39539ba5a",
+      "rows": 408
+    },
+    "04 Experiments/EXP02_GB1_ESM2/gb1_random_derangement_null_by_derangement.csv": {
+      "sha256": "1d614cbbe9dcb64fb80b93a083227fa61079a779749495fc3f70d994191af02b",
+      "rows": 60
+    },
+    "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_subset_effects.csv": {
+      "sha256": "d38719a2b12f055998c83688fb82675cc9851ddb83dbf77d60b745266ed1938b",
+      "rows": 12
+    },
+    "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_comparison.csv": {
+      "sha256": "4129db88d054172707310c4a3fbf8406192ccf873bc8531816fef28986fdbce1",
+      "rows": 45
+    },
+    "04 Experiments/EXP03_MI/fixed_subset_sample_regime_replicate_summary.csv": {
+      "sha256": "eb912391e6ad7830df5c8025002c7609a9669350242615bc6d268fc19815d480",
+      "rows": 15
+    },
+    "04 Experiments/EXP03_MI/fixed_subset_sample_regime_gain_summary.csv": {
+      "sha256": "16569ca709873f0409eda755428453521dcd58d8937c29a27cfd269e57cb8b41",
+      "rows": 5
+    }
+  },
+  "panel_sources": {
+    "A": [
+      "04 Experiments/EXP02_GB1_ESM2/gb1_target_mi_seed_results.csv",
+      "04 Experiments/EXP02_GB1_ESM2/gb1_random_derangement_null_by_derangement.csv"
+    ],
+    "B": [
+      "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_subset_effects.csv"
+    ],
+    "C": [
+      "04 Experiments/EXP02_GB1_ESM2/gb1_subset_conditioned_diag_comparison.csv"
+    ],
+    "D": [
+      "04 Experiments/EXP03_MI/fixed_subset_sample_regime_replicate_summary.csv",
+      "04 Experiments/EXP03_MI/fixed_subset_sample_regime_gain_summary.csv"
+    ]
+  },
+  "outputs": [
+    "05 Figure/Figure_subset_conditioning_validation_paper_v6.pdf",
+    "05 Figure/Figure_subset_conditioning_validation_paper_v6.png"
+  ]
+}

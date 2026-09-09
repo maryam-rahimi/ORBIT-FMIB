@@ -1,0 +1,141 @@
+{
+  "code_name": "ORBIT-FMIB CODE 15 \u2014 LAYERWISE DYNAMICS ANALYSIS",
+  "frozen_tau": 0.006777383486429849,
+  "inputs": {
+    "code11_manifest": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_manifest.json",
+      "sha256": "eceb67b989192623218fb05e2f6c9eab2efa9acd9e0e8e4cc76b5066e9759888"
+    },
+    "code12_manifest": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_manifest.json",
+      "sha256": "b51c1d0c8e6f90a1aed24842f86aa8ccaf216a4bb1d0cc6e23658911fb56466b"
+    },
+    "code13_manifest": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_retention_manifest.json",
+      "sha256": "04cbd11d809a9ff6d073f266ce6f7556f4c5557aa4e7688f9736aaf816a502b1"
+    },
+    "contrast": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_retention_contrast.csv",
+      "sha256": "385676dc10160eb63eb8e8bc19c84f6de177284239d55ec3639457aeb98e3bb0"
+    },
+    "order_retention": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_order_retention_summary.csv",
+      "sha256": "d072e8485bc4f34af1e7f1a02642ef404f54cb4e7be5c3d4f6f9f7eb1a3ab721"
+    },
+    "seed_results": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/gb1_subset_mi_seed_results.csv",
+      "sha256": "5a6f0e171de024edd1ec3c05d3914d11a81785ce2579bb7225c5f38c1ab0afe9"
+    },
+    "subset_retention": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code13/gb1_subset_retention.csv",
+      "sha256": "2134555f05ad60edd0acd8743b67dfd42a74957e46bc6b5b7dcece983b816616"
+    },
+    "trajectory": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectories_long.csv",
+      "sha256": "ad2e5ec150c5c664e77bc3b877ae0ad79c91314f3dc1494790e4ad6634e8dcf4"
+    },
+    "trajectory_index": {
+      "path": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code12/gb1_subset_trajectory_index.csv",
+      "sha256": "302508e2aee5f80a68e9b184fec0656df09f43465f834dfa91de33f12666f224"
+    }
+  },
+  "interpretation_limits": [
+    "Neural dependence scores are comparative and are not calibrated exact MI in nats.",
+    "Peak-normalized order curves are descriptive averages of fixed-subset normalized trajectories.",
+    "The fourth-order curve contains one positional subset and has no within-order subset replication.",
+    "Adjacent gain/drop landmarks are descriptive and are not significance-tested change points.",
+    "Critic-seed peak behavior is an estimator-stability diagnostic, not biological replication.",
+    "No causal-use claim is supported by this analysis."
+  ],
+  "output_counts": {
+    "normalized_long_rows": 465,
+    "order_normalized_rows": 124,
+    "order_raw_rows": 124,
+    "order_summary_rows": 4,
+    "seed_dynamics_rows": 45,
+    "subset_summary_rows": 15
+  },
+  "output_sha256": {
+    "gb1_layerwise_order_summary.csv": "ca70076f8cf32b60bd4c1cae857e268c77ae63b296ae236ecc0c3a328f865536",
+    "gb1_layerwise_subset_normalized_long.csv": "fa761e176564f17b725ef9fe10ce68656f2234ad4a84545e969e6cddc2f070c5",
+    "gb1_layerwise_subset_summary.csv": "3235f884d327c8b4a29fd0e29208e1ae85fd4e596bea045c791abf853688fbeb",
+    "gb1_order_layerwise_peak_normalized.csv": "afe0c313c96fdb1ad55022220904b2a5cb225b980f5aec9b7be260f6cae436d3",
+    "gb1_order_layerwise_raw_descriptive.csv": "02ba03e75cedbc63d37d5e53a68dbf53c6be7b53091c42676a4ad5e35ba5cb4c",
+    "gb1_subset_seed_dynamics.csv": "ac06d5a5a01905cd64c9d673c40ab6ed50036f5767ea666f1a04c9817999c7fe"
+  },
+  "outputs": {
+    "gb1_layerwise_order_summary.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_order_summary.csv",
+    "gb1_layerwise_subset_normalized_long.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_normalized_long.csv",
+    "gb1_layerwise_subset_summary.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_layerwise_subset_summary.csv",
+    "gb1_order_layerwise_peak_normalized.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_order_layerwise_peak_normalized.csv",
+    "gb1_order_layerwise_raw_descriptive.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_order_layerwise_raw_descriptive.csv",
+    "gb1_subset_seed_dynamics.csv": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910/Code15/gb1_subset_seed_dynamics.csv"
+  },
+  "overall_pass": true,
+  "production_root": "04 Experiments/EXP02_GB1_ESM2/IID_Production_20260910",
+  "production_source": "03 Code/15_analyze_gb1_layerwise_dynamics.py",
+  "production_source_sha256": "1ed653affb487c49617eaf0afd0a6e023338f1971cdee28ef86e396b38ab890a",
+  "provenance_gates": {
+    "code11_manifest_pass": true,
+    "code12_manifest_pass": true,
+    "code13_manifest_pass": true,
+    "code13_order_retention_matches_final_normalized_order_curves": true,
+    "code13_retention_rederived_exactly_within_tolerance": true
+  },
+  "purpose": "Descriptive layerwise analysis of frozen corrected-IID GB1 + ESM-2 fixed-subset neural dependence trajectories.",
+  "schema_version": 1,
+  "scientific_contract": {
+    "critic_seeds_are_estimator_replicates": true,
+    "formal_inference_performed": false,
+    "largest_adjacent_gain_drop_are_descriptive_landmarks": true,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "mine_refitting_performed": false,
+    "n_layer_subset_cells": 465,
+    "n_subsets": 15,
+    "negative_scores_clamped": false,
+    "normalization_performed_within_fixed_subset": true,
+    "null_scores_subtracted": false,
+    "onset_landmarks": [
+      "first layer reaching 50% of within-subset peak",
+      "first layer reaching 90% of within-subset peak"
+    ],
+    "order_normalized_curve": "mean_S in order of N_l,S",
+    "order_raw_curve_is_descriptive_only": true,
+    "peak_normalization": "N_l,S = D_l,S / max_j D_j,S",
+    "pooled_by_order_mi_estimation": false,
+    "primary_measurement_unit": "fixed positional subset S"
+  },
+  "status": "complete_pass"
+}
